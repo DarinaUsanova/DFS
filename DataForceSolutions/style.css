@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --text-dark: #1c2b40;
+  --text-light: #ffffff;
+  --main-blue: #2673fd;
+  --glass-blue: #0059ffb2;
+  --main-purple: #dfa3f0;
+
+  --primary-font: "Spline Sans", system-ui;
+  --secondary-font: "Spline Sans Mono", system-ui;
+}
