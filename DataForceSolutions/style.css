@@ -14,6 +14,7 @@
   --main-blue: #2673fd;
   --glass-blue: #0059ffb2;
   --main-purple: #dfa3f0;
+  --white: #ffffff;
 
   --primary-font: "Spline Sans", system-ui;
   --secondary-font: "Spline Sans Mono", system-ui;
@@ -24,6 +25,7 @@
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: pink;
 }
 
 header {
@@ -59,4 +61,139 @@ header {
   font-weight: 500;
   font-size: 1rem;
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+}
+
+.hero {
+  margin: 36px 0 129px;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: var(--text-dark);
+  font-family: var(--primary-font);
+  font-size: 10.6rem;
+  font-weight: 600;
+  line-height: 10rem;
+  letter-spacing: -1.7px;
+}
+
+h4 {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 4.6rem 0 2rem;
+}
+
+.hero-text {
+  font-family: var(--secondary-font);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 4.6rem;
+  max-width: 1154px;
+}
+
+.accent {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn {
+  width: 15.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--text-dark);
+  background: var(--white);
+  border-radius: 48px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  outline: none;
+  cursor: pointer;
+}
+
+.services {
+  margin: 142px 0 156px;
+}
+
+.services-wrapper h2 {
+  margin-left: 5.5rem;
+  margin-bottom: 3rem;
+}
+
+.cards-wrapper {
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-dark);
+  padding: 4rem;
+  background: url(/images/card-bg.svg) no-repeat center;
+}
+
+.card-text-vector {
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  width: 616px;
+  height: 111px;
+  z-index: 1;
+}
+
+h3 {
+  font-family: var(--primary-font);
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.card-content {
+  position: relative;
+  width: 674px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.card-text {
+  font-family: var(--secondary-font);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  opacity: 0.8;
+}
+
+.card-img {
+  position: relative;
+}
+
+.decoration-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-img img {
+  width: 434px;
+  height: 429px;
 }
