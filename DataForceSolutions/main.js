@@ -142,22 +142,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // worflow animation
-let path = document.querySelector(".workflow-box svg path");
-let length = path.getTotalLength();
+// let path = document.querySelector(".workflow-box svg path");
+// let length = path.getTotalLength();
 
-path.style.strokeDasharray = length;
-path.style.strokeDashoffset = length;
+// path.style.strokeDasharray = length;
+// path.style.strokeDashoffset = length;
 
-gsap.to(path, {
-  strokeDashoffset: 0,
-  duration: 8,
-  ease: "none",
-  repeat: -1,
-  yoyo: true,
-  scrollTrigger: {
-    trigger: ".workflow",
-    start: "top top",
-    markers: true,
-    toggleActions: "play none resume pause",
-  },
-});
+// gsap.to(path, {
+//   strokeDashoffset: 0,
+//   duration: 8,
+//   ease: "none",
+//   repeat: -1,
+//   yoyo: true,
+//   scrollTrigger: {
+//     trigger: ".workflow",
+//     start: "top top",
+//     markers: true,
+//     toggleActions: "play none resume pause",
+//   },
+// });

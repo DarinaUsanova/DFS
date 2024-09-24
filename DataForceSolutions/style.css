@@ -54,7 +54,8 @@ header {
 .navbar {
   padding: 1rem 2rem;
   border-radius: 40px;
-  border: 2px solid rgba(236, 233, 242, 0.3);
+  border: none;
+  outline: 2px solid rgba(236, 233, 242, 0.3);
   background: rgba(255, 255, 255, 0.13);
   backdrop-filter: blur(10px);
 }
@@ -138,7 +139,8 @@ h4 {
   color: var(--text-dark);
   background: var(--white);
   border-radius: 48px;
-  border: 4px solid rgba(255, 255, 255, 0.3);
+  border: none;
+  outline: 4px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   outline: none;
   cursor: pointer;
@@ -240,6 +242,7 @@ h3 {
   padding: 128px 80px;
   background-color: var(--main-blue);
   color: var(--text-light);
+  border-radius: 0 0 32px 32px;
 }
 
 .section-header {
@@ -350,7 +353,8 @@ h3 {
   align-items: center;
   padding: 24px 36px;
   border-radius: 32px;
-  border: 6px solid rgba(232, 239, 246, 0.8);
+  border: none;
+  outline: 6px solid rgba(232, 239, 246, 0.8);
   background: rgba(0, 89, 255, 0.7);
   backdrop-filter: blur(10px);
 }
@@ -389,6 +393,304 @@ h3 {
   margin-bottom: 10px;
 }
 
+.workflow-3 {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.workflow-3 svg {
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.third-box {
+  transform: rotate(3deg);
+}
+
+.workflow-4 {
+  position: absolute;
+  top: 400px;
+  right: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.workflow-4 svg {
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.fourth-box {
+  width: 288px;
+  transform: rotate(3deg);
+}
+
+.workflow-5 {
+  position: absolute;
+  bottom: 140px;
+  left: 16px;
+}
+
+.fifth-box {
+  transform: rotate(-4deg);
+}
+
+.workflow-5 svg {
+  margin-left: 8px;
+}
+
+.workflow-6 {
+  position: absolute;
+  bottom: -20px;
+  right: 120px;
+}
+
+.sixth-box {
+  width: 308px;
+}
+
+.six-inner {
+  position: relative;
+}
+
+.flag {
+  position: absolute;
+  bottom: 90px;
+  right: -140px;
+  z-index: -1;
+}
+
+.decoration-svg {
+  position: absolute;
+  top: -18%;
+  left: -8%;
+}
+
+.technology-wrapper {
+  position: relative;
+  padding: 128px 80px;
+  background-color: var(--main-blue);
+  color: var(--text-light);
+  border-radius: 32px 32px 0 0;
+}
+
+.technology-wrapper h2 {
+  color: var(--text-light);
+}
+
+.technology-logos {
+  margin: 96px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.first-row {
+  display: flex;
+  gap: 88px;
+  padding: 40px 0 24px;
+}
+
+.second-row {
+  display: flex;
+  gap: 66px;
+  padding: 24px;
+}
+
+.third-row {
+  display: flex;
+  gap: 76px;
+  padding: 24px;
+}
+
+.fourth-row {
+  display: flex;
+  gap: 76px;
+  padding: 24px 0 40px;
+}
+
+.clients-wrapper {
+  position: relative;
+  bottom: 0;
+  background-color: var(--white);
+  color: var(--text-dark);
+  width: 1280px;
+  padding: 48px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 106px;
+  box-shadow: 343px 293px 126px 0px rgba(28, 42, 62, 0),
+    220px 188px 116px 0px rgba(28, 42, 62, 0.01),
+    123px 106px 97px 0px rgba(28, 42, 62, 0.03),
+    55px 47px 72px 0px rgba(28, 42, 62, 0.05),
+    14px 12px 40px 0px rgba(28, 42, 62, 0.06);
+}
+
+.clients-header {
+  position: relative;
+}
+h5 {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.clients-header svg {
+  position: absolute;
+  left: 30%;
+}
+
+.clients-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  justify-content: space-around;
+  gap: 60px;
+  animation: slider 20s linear infinite;
+}
+
+.client-item {
+  display: inline-block;
+}
+
+.contact-wrapper {
+  padding: 148px 40px;
+}
+
+.message-card form {
+  position: relative;
+  margin-top: 76px;
+  padding: 40px;
+  width: 879px;
+  height: 479px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: url(/images/form.svg) no-repeat center;
+}
+
+.form-top {
+  display: flex;
+  gap: 24px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.message-card label {
+  color: var(--text-light);
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-left: 24px;
+}
+
+.message-card input {
+  height: 60px;
+  width: 362px;
+  padding: 16px 24px;
+  align-items: center;
+  border-radius: 32px;
+  border: none;
+  outline: 4px solid rgba(236, 233, 242, 0.3);
+  background: var(--white);
+  color: var(--text-dark);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.message-card input:focus,
+.message-card textarea:focus {
+  outline: 4px solid var(--main-blue);
+}
+
+.message-card textarea {
+  height: 192px;
+  width: 799px;
+  padding: 16px 24px;
+  border-radius: 32px;
+  border: 4px solid rgba(236, 233, 242, 0.3);
+  background: var(--white);
+  color: var(--text-dark);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  resize: none;
+}
+
+.message-card button {
+  position: absolute;
+  bottom: -7%;
+  left: 7%;
+  width: 240px;
+  height: 64px;
+  padding: 16px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48px;
+  border: none;
+  outline: 4px solid rgba(255, 255, 255, 0.3);
+  background: var(--main-blue);
+  box-shadow: 0px 255px 71px 0px rgba(75, 44, 84, 0),
+    0px 163px 65px 0px rgba(75, 44, 84, 0.01),
+    0px 92px 55px 0px rgba(75, 44, 84, 0.05),
+    0px 41px 41px 0px rgba(75, 44, 84, 0.08),
+    0px 10px 22px 0px rgba(75, 44, 84, 0.09);
+  backdrop-filter: blur(10px);
+  color: var(--text-light);
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+
+.message-card span {
+  align-self: flex-end;
+  color: var(--text-light);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 /* animation for bg */
 
 @keyframes moveInCircle {
