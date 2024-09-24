@@ -14,6 +14,30 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                result="goo"
+              />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="interactive"></div>
+        </div>
+      </div> -->
       <header>
         <div class="logo">
           <img src="/images/logo.png" alt="logo" />
@@ -28,7 +52,6 @@
           </ul>
         </nav>
       </header>
-      <main>
         <section class="hero">
           <div class="hero-wrapper">
             <h1>engineering<br />your success</h1>
@@ -39,63 +62,66 @@
               to gain valuable insights and&nbsp;drive&nbsp;innovation.
             </p>
             <button class="btn">contact us</button>
+            <svg class="hero-svg" width="228" height="421" viewBox="0 0 228 421" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M164.5 5.5C195.721 34 208.846 62 217.996 104.934C247.153 241.748 133.997 346.454 28.9689 401.41C24.0851 403.966 18.7706 406.479 13.761 408.784C-7.50522 418.569 47.2346 321.559 16.6797 382.669C15.3971 385.234 2.19256 410.411 5.54266 412.086C15.761 417.196 51.7344 415.023 62.7344 414.523" stroke="#1C2B40" stroke-width="10" stroke-linecap="round"/>
+            </svg>
           </div>
         </section>
         <section class="services">
           <div class="services-wrapper">
             <h2>services</h2>
-            <div class="cards-wrapper">
-              <div class="card">
-                <div class="card-content">
-                  <h3>Artificial Intelligence</h3>
-                  <p class="card-text">We focus on creating customized AI strategies that align with your business model and goals, helping you maintain a competitive advantage. We design secure and scalable AI solutions that smoothly integrate into the core of your company, enhancing every aspect of your operations.</p>
+              <div class="cards-wrapper">
+                <div class="card" id="card1">
+                  <div class="card-content">
+                    <h3>Artificial Intelligence</h3>
+                    <p class="card-text">We focus on creating customized AI strategies that align with your business model and goals, helping you maintain a competitive advantage. We design secure and scalable AI solutions that smoothly integrate into the core of your company, enhancing every aspect of your operations.</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="/images/card-img-1.png" alt="white and blue abstract shapes">
+                  </div>
                 </div>
-                <div class="card-img">
-                  <img src="/images/card-img-1.png" alt="white and blue abstract shapes">
+                <div class="card" id="card2">
+                  <div class="card-content">
+                    <h3>Data Science and Machine Learning</h3>
+                    <p class="card-text">We develop tailored machine learning (ML) solutions to unlock predictive insights and automate decision-making processes. Our approach focuses on understanding your unique challenges and opportunities, enabling us to deliver highly customized,effective ML models.</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="/images/card-img-2.png" alt="purple and blue abstract shapes">
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="card-content">
-                  <h3>Data Science and Machine Learning</h3>
-                  <p class="card-text">We develop tailored machine learning (ML) solutions to unlock predictive insights and automate decision-making processes. Our approach focuses on understanding your unique challenges and opportunities, enabling us to deliver highly customized,effective ML models.</p>
-                </div>
-                <div class="card-img">
-                  <img src="/images/card-img-2.png" alt="purple and blue abstract shapes">
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-content">
-                  <svg class="decoration-3" width="622" height="117" viewBox="0 0 622 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M321.934 5.90677C241.193 8.59542 129.053 -9.50376 52.8857 21.0448C8.67972 38.7746 16.0812 82.2602 57.3016 95.2372C118.424 114.48 190.949 105.62 253.739 100.459C316.156 95.3279 377.621 99.4686 440.024 102.159C483.887 104.049 537.174 102.719 577.871 87.4254C588.668 83.3684 604.639 76.5977 606.279 64.6779C611.953 23.4291 531.877 24.2697 503.303 22.9067C363.336 16.2304 222.136 18.3489 81.8847 15.6615C51.4327 15.078 7.99015 19.5181 3.44637 53.8303C-5.8578 124.091 132.848 114.524 180.763 112.318C261.86 108.585 343.011 106.674 424.182 109.201C478.608 110.896 546.304 118.47 592.731 87.4254C620.326 68.9728 634.479 45.6232 592.731 21.0448" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                <div class="card" id="card3">
+                  <div class="card-content">
+                    <svg class="decoration-3" width="622" height="117" viewBox="0 0 622 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M321.934 5.90677C241.193 8.59542 129.053 -9.50376 52.8857 21.0448C8.67972 38.7746 16.0812 82.2602 57.3016 95.2372C118.424 114.48 190.949 105.62 253.739 100.459C316.156 95.3279 377.621 99.4686 440.024 102.159C483.887 104.049 537.174 102.719 577.871 87.4254C588.668 83.3684 604.639 76.5977 606.279 64.6779C611.953 23.4291 531.877 24.2697 503.303 22.9067C363.336 16.2304 222.136 18.3489 81.8847 15.6615C51.4327 15.078 7.99015 19.5181 3.44637 53.8303C-5.8578 124.091 132.848 114.524 180.763 112.318C261.86 108.585 343.011 106.674 424.182 109.201C478.608 110.896 546.304 118.47 592.731 87.4254C620.326 68.9728 634.479 45.6232 592.731 21.0448" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                      </svg>
+                    <h3>Business Intelligence</h3>
+                    <p class="card-text">Business Intelligence powers decisions by transforming complex data into actionable insights and providing real-time access to reports, metrics, and KPIs. Our services span advanced data analysis and visualization to equip your company for data-driven success.</p>
+                  </div>
+                  <div class="card-img deco">
+                    <svg class="decoration-1" width="49" height="32" viewBox="0 0 49 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M42.8442 25.0465L12.5 4.5" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                      <path d="M36.9019 28.569C25.6181 27.6108 14.3477 26.6171 3 25.9233" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                      <path d="M46.3652 19.2696C44.4627 13.5573 41.6824 8.42055 39.0968 3" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
                     </svg>
-                  <h3>Business Intelligence</h3>
-                  <p class="card-text">Business Intelligence powers decisions by transforming complex data into actionable insights and providing real-time access to reports, metrics, and KPIs. Our services span advanced data analysis and visualization to equip your company for data-driven success.</p>
+                    <svg class="decoration-2" width="77" height="73" viewBox="0 0 77 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M49.1859 11.4103L21.5277 3" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                      <path d="M53.2547 29.5952L3 61.4606" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                      <path d="M73.5787 36.8283L62.6864 69.8392" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                      </svg>
+                    <img src="/images/card-img-3.png" alt="purple, light blue and blue abstract shapes">
+                  </div>
                 </div>
-                <div class="card-img deco">
-                  <svg class="decoration-1" width="49" height="32" viewBox="0 0 49 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M42.8442 25.0465L12.5 4.5" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M36.9019 28.569C25.6181 27.6108 14.3477 26.6171 3 25.9233" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M46.3652 19.2696C44.4627 13.5573 41.6824 8.42055 39.0968 3" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
-                  </svg>
-                  <svg class="decoration-2" width="77" height="73" viewBox="0 0 77 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M49.1859 11.4103L21.5277 3" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M53.2547 29.5952L3 61.4606" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M73.5787 36.8283L62.6864 69.8392" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
-                    </svg>
-                  <img src="/images/card-img-3.png" alt="purple, light blue and blue abstract shapes">
+                <div class="card" id="card4">
+                  <div class="card-content">
+                    <h3>Engineering Services</h3>
+                    <p class="card-text">Our Engineering Services streamline the entire product lifecycle, from
+                      ideation to release, emphasizing quality, adaptability, and speed. We integrate the latest technologies with proven agile methodologies, ensuring seamless collaboration across development, testing, and deployment stages.</p>
+                  </div>
+                  <div class="card-img">
+                    <img src="/images/card-img-4.png" alt="purple and light blue abstract shapes">
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="card-content">
-                  <h3>Engineering Services</h3>
-                  <p class="card-text">Our Engineering Services streamline the entire product lifecycle, from
-                    ideation to release, emphasizing quality, adaptability, and speed. We integrate the latest technologies with proven agile methodologies, ensuring seamless collaboration across development, testing, and deployment stages.</p>
-                </div>
-                <div class="card-img">
-                  <img src="/images/card-img-4.png" alt="purple and light blue abstract shapes">
-                </div>
-              </div>
-          </div>
+            </div>
         </section>
         <section class="about">
           <div class="about-wrapper">
@@ -142,12 +168,40 @@
             </div>
           </div>
         </section>
-        <section class="workflow"></section>
+        <section class="workflow">
+          <div class="workflow-wrapper">
+            <h2>workflow</h2>
+            <div class="workflow-box">
+              <svg class="main-arrow" width="1075" height="921" viewBox="0 0 1075 921" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M416.238 5C606.53 66.6052 656.97 226.737 457.238 346.877C329.521 423.699 176.72 279.396 312.738 181.5C457.238 77.5 976.962 115.964 1058.09 346.877C1202.02 779.5 -35.5204 304.532 6.02369 722.94C30.0272 964.69 541.106 896.707 725.239 887.5C726.5 887 687 915.5 687 915.5C687 917.5 679.855 865.886 687.042 855.105C695.642 842.206 722.5 886.5 722.5 886.5" stroke="#1C2B40" stroke-width="10" stroke-linecap="round"/>
+              </svg>
+              <div class="worflow-1">
+                <svg width="57" height="76" viewBox="0 0 57 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.26587 34.1343C10.7821 25.258 18.3767 16.448 26.0514 7.70832C27.3908 6.18304 28.6784 4.60843 30.0982 3.15772C30.9606 2.27653 30.4722 5.374 30.472 5.40052C30.267 27.5434 26.7162 49.4352 23.4511 71.2868M8.23903 72.7497C20.136 72.4053 32.0303 72.1217 43.9288 71.8721" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                  <path d="M52.9976 71.2867C53.5264 71.7568 54.4317 71.2724 53.8752 70.9941" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+                <div class="item-box first-box">
+                  <span>Idea&nbsp;Formulation</span>
+                </div>
+              </div>
+              <div class="workflow-2">
+                <svg width="56" height="79" viewBox="0 0 56 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M52.2659 76.2925C52.7948 76.7627 53.7 76.2783 53.1435 76" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                  <path d="M5.00543 27.6115C-6.19326 2.01453 40.3416 -8.89072 40.3416 21.0439C38.5633 41.7674 5.59798 68.7214 5.00539 72.6667C4.32578 77.1912 38.6357 75.268 40.4128 75.2114" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+                <div class="item-box second-box">
+                  <span>Requirements<br>Engineering</span>
+                </div>
+              </div>
+            </div>
+        </section>
         <section class="technology"></section>
         <section class="contact"></section>
-      </main>
       <footer></footer>
     </div>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script type="module" src="/main.js" defer></script>
   </body>
 </html>
