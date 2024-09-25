@@ -15,34 +15,31 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- <div class="gradient-bg">
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <filter id="goo">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-              <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                result="goo"
-              />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-        <div class="gradients-container">
-          <div class="g1"></div>
-          <div class="g2"></div>
-          <div class="g3"></div>
-          <div class="g4"></div>
-          <div class="g5"></div>
-          <div class="interactive"></div>
+        <div class="gradient-bg">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                  result="goo"
+                />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg>
+          <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+          </div>
         </div>
-      </div> -->
       <header>
-        <div class="logo">
-          <img src="/images/logo.png" alt="logo" />
-        </div>
         <nav class="navbar">
           <ul>
             <li><a href="#">services</a></li>
@@ -53,6 +50,9 @@
           </ul>
         </nav>
       </header>
+      <div class="logo">
+        <img src="/images/Logo.svg" alt="logo" />
+      </div>
         <section class="hero">
           <div class="hero-wrapper">
             <h1>engineering<br />your success</h1>
@@ -124,8 +124,12 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about-us-section">
           <div class="about-wrapper">
+            <svg class="about-svg" width="108" height="55" viewBox="0 0 108 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 5C15 12 24 25.3735 24 25.3735M46.5 49.5C35 41.5 24 25.3735 24 25.3735M24 25.3735L46.5 5M24 25.3735L5 49.5" stroke="#1C2B40" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M61 5C71 12 80 25.3735 80 25.3735M102.5 49.5C91 41.5 80 25.3735 80 25.3735M80 25.3735L102.5 5M80 25.3735L61 49.5" stroke="#1C2B40" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
             <div class="section-header">
               <h2>about us</h2>
               <p class="section-text">We are a team of developers and data scientists passionate about solving complex problems with innovative technologies.</p>
@@ -350,11 +354,43 @@
                   <span>all the fields are required</span>
                   <button class="send-btn" type="submit">send</button>
                 </form>
-              </div>              
+              </div>
+              <div class="call-card">
+                <div class="call-card-inner">
+                  <span>You can also book<br>a call with us</span>
+                  <svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3C36.6055 8.53662 51.1055 34.0366 57.0138 58.6506M57.6049 60.5364C59.6097 54.5624 60.5579 50.0256 62.5628 44.0515M57.2735 60.2305L44.1022 52.141" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                  </svg>
+                  <button class="call-btn">book</button>
+                </div>
+              </div>
+              <div class="decoration-box airplane">
+                <img src="/images/airplane.svg" alt="">
+              </div>
+              <div class="decoration-box idea">
+                <img src="/images/idea.svg" alt="">
+              </div>          
             </div>
           </div>
         </section>
-      <footer></footer>
+      <footer>
+        <div class="footer-wrapper">
+          <div class="info-box">
+              <span class="footer-info">Mengerstrasse 8/18, 4040, Linz, Austria</span>
+            <div class="socials">
+              <a href="#"><span class="footer-info">X (Twitter)</span></a>
+              <a href="#"><span class="footer-info">LinkedIn</span></a>
+              <a href="#"><span class="footer-info">Instagram</span></a>
+            </div>
+          </div>
+          <a href="mailto:hi@dataforce.solutions"><span class="email">hi@dataforce.solutions</span></a>
+            <div class="legal">
+              <a href="#"><span class="footer-info">Privacy guidelines</span></a>
+              <a href="#"><span class="footer-info">Legal information</span></a>
+              <span class="footer-info">© DataForce Solutions GmbH 2024</span>
+            </div>
+        </div>
+      </footer>
     </div>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>

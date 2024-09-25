@@ -142,22 +142,37 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // worflow animation
-// let path = document.querySelector(".workflow-box svg path");
-// let length = path.getTotalLength();
+let path = document.querySelector(".workflow-box svg path");
+let length = path.getTotalLength();
 
-// path.style.strokeDasharray = length;
-// path.style.strokeDashoffset = length;
+path.style.strokeDasharray = length;
+path.style.strokeDashoffset = length;
 
-// gsap.to(path, {
-//   strokeDashoffset: 0,
-//   duration: 8,
-//   ease: "none",
-//   repeat: -1,
-//   yoyo: true,
-//   scrollTrigger: {
-//     trigger: ".workflow",
-//     start: "top top",
-//     markers: true,
-//     toggleActions: "play none resume pause",
-//   },
-// });
+gsap.to(path, {
+  strokeDashoffset: 0,
+  duration: 8,
+  ease: "none",
+  repeat: -1,
+  yoyo: true,
+  scrollTrigger: {
+    trigger: ".workflow",
+    start: "top top",
+    // markers: true,
+    toggleActions: "play none resume pause",
+  },
+});
+
+// borders for bg-animation
+
+gsap.to(".gradient-bg", {
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: "#about-us-section",
+    start: "top top",
+    end: "top 80%",
+    // markers: true,
+    onEnter: () => gsap.to(".gradient-bg", { opacity: 0 }),
+    onLeaveBack: () => gsap.to(".gradient-bg", { opacity: 1 }),
+  },
+});
