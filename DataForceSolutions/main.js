@@ -150,10 +150,11 @@ path.style.strokeDashoffset = length;
 
 gsap.to(path, {
   strokeDashoffset: 0,
-  duration: 8,
+  duration: 4,
   ease: "none",
   repeat: -1,
-  yoyo: true,
+  repeatDelay: 2,
+  yoyo: false,
   scrollTrigger: {
     trigger: ".workflow",
     start: "top top",
@@ -163,7 +164,6 @@ gsap.to(path, {
 });
 
 // borders for bg-animation
-
 gsap.to(".gradient-bg", {
   opacity: 0,
   duration: 0.5,

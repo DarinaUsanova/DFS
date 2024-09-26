@@ -47,7 +47,7 @@ header {
   position: sticky;
   top: 0;
   left: 50%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .logo {
@@ -148,7 +148,6 @@ h4 {
   border: none;
   outline: 4px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  outline: none;
   cursor: pointer;
 }
 
@@ -383,10 +382,10 @@ h3 {
   line-height: 3.5rem;
 }
 
-.worflow-1 {
+.workflow-1 {
   position: absolute;
   top: -140px;
-  left: 50px;
+  left: 70px;
   display: flex;
   flex-direction: column;
 }
@@ -586,6 +585,20 @@ h5 {
 .clients-slider {
   overflow: hidden;
   width: 100%;
+  position: relative;
+}
+
+.clients-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, transparent 80%, #fff 100%),
+    linear-gradient(to left, transparent 80%, #fff 100%);
+  pointer-events: none;
+  z-index: 3;
 }
 
 .clients {
@@ -849,6 +862,13 @@ fieldset {
 .socials {
   display: flex;
   gap: 36px;
+}
+
+.socials a {
+}
+
+.socials a:hover {
+  text-decoration: underline;
 }
 
 .email {
