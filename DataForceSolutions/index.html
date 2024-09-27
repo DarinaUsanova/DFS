@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="page-wrapper">
         <div class="gradient-bg">
           <svg xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -42,11 +42,11 @@
       <header>
         <nav class="navbar">
           <ul>
-            <li><a href="#">services</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">workflow</a></li>
-            <li><a href="#">technology</a></li>
-            <li><a href="#">contacts</a></li>
+            <li><a href="#services-section">services</a></li>
+            <li><a href="#about-us-section">about us</a></li>
+            <li><a href="#workflow-section">workflow</a></li>
+            <li><a href="#technology-section">technology</a></li>
+            <li><a href="#contact-section">contacts</a></li>
           </ul>
         </nav>
       </header>
@@ -55,23 +55,24 @@
       </div>
         <section class="hero">
           <div class="hero-wrapper">
-            <h1>engineering<br />your success</h1>
+            <h1>engineering<br/>your success</h1>
             <h4>from idea to solution</h4>
             <p class="hero-text">
               <span class="hero-text accent">DataForce Solutions </span>empowers
               businesses with state-of-the-art Data Science and AI technologies
               to gain valuable insights and&nbsp;drive&nbsp;innovation.
             </p>
-            <button class="btn">contact us</button>
+            <a href="#contact-section" class="btn">contact us</a>
+            <!-- <button class="btn">contact us</button> -->
             <svg class="hero-svg" width="228" height="421" viewBox="0 0 228 421" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M164.5 5.5C195.721 34 208.846 62 217.996 104.934C247.153 241.748 133.997 346.454 28.9689 401.41C24.0851 403.966 18.7706 406.479 13.761 408.784C-7.50522 418.569 47.2346 321.559 16.6797 382.669C15.3971 385.234 2.19256 410.411 5.54266 412.086C15.761 417.196 51.7344 415.023 62.7344 414.523" stroke="#1C2B40" stroke-width="10" stroke-linecap="round"/>
             </svg>
           </div>
         </section>
-        <section class="services">
+        <section class="services" id="services-section">
           <div class="services-wrapper">
             <h2>services</h2>
-              <div class="cards-wrapper">
+              <div class="cards">
                 <div class="card" id="card1">
                   <div class="card-content">
                     <h3>Artificial Intelligence</h3>
@@ -173,7 +174,7 @@
             </div>
           </div>
         </section>
-        <section class="workflow">
+        <section class="workflow" id="workflow-section">
           <div class="workflow-wrapper">
             <h2>workflow</h2>
             <div class="workflow-box">
@@ -249,7 +250,7 @@
               </div>
             </div>
         </section>
-        <section class="technology">
+        <section class="technology" id="technology-section">
           <div class="technology-wrapper">
             <div class="section-header">
               <h2>technology</h2>
@@ -328,7 +329,7 @@
               </div>
           </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact-section">
           <div class="contact-wrapper">
             <div class="section-header">
               <h2>get in touch</h2>
@@ -352,7 +353,7 @@
                     <textarea id="message" name="message" required></textarea>
                   </fieldset>
                   <span>all the fields are required</span>
-                  <button class="send-btn" type="submit">send</button>
+                  <button class="btn send-btn" type="submit">send</button>
                 </form>
               </div>
               <div class="call-card">
@@ -361,7 +362,7 @@
                   <svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 3C36.6055 8.53662 51.1055 34.0366 57.0138 58.6506M57.6049 60.5364C59.6097 54.5624 60.5579 50.0256 62.5628 44.0515M57.2735 60.2305L44.1022 52.141" stroke="white" stroke-width="5" stroke-linecap="round"/>
                   </svg>
-                  <button class="call-btn">book</button>
+                  <button class="btn call-btn">book</button>
                 </div>
               </div>
               <div class="decoration-box airplane">

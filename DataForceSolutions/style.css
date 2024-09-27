@@ -34,7 +34,38 @@
   --blending: hard-light;
 }
 
-.wrapper {
+h1,
+h2 {
+  color: var(--text-dark);
+  font-family: var(--primary-font);
+  font-size: 10.6rem;
+  font-weight: 600;
+  line-height: 10rem;
+  letter-spacing: -1.7px;
+}
+
+h3 {
+  font-family: var(--primary-font);
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 74px 0 32px;
+}
+
+h5 {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.page-wrapper {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -43,7 +74,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1.5rem 2.5rem;
+  padding: 24px 40px;
   position: sticky;
   top: 0;
   left: 50%;
@@ -52,13 +83,13 @@ header {
 
 .logo {
   position: absolute;
-  top: 1.5rem;
-  padding-left: 2.5rem;
+  top: 24px;
+  padding-left: 40px;
   z-index: 1;
 }
 
 .navbar {
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   border-radius: 40px;
   border: none;
   outline: 2px solid rgba(236, 233, 242, 0.3);
@@ -69,7 +100,7 @@ header {
 .navbar ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .navbar a {
@@ -77,8 +108,15 @@ header {
   color: var(--text-dark);
   font-family: var(--secondary-font);
   font-weight: 500;
-  font-size: 1rem;
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+}
+
+.navbar li {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar li:hover {
+  transform: scale(1.1);
 }
 
 .hero {
@@ -100,29 +138,12 @@ header {
   right: 25%;
 }
 
-h1,
-h2 {
-  color: var(--text-dark);
-  font-family: var(--primary-font);
-  font-size: 10.6rem;
-  font-weight: 600;
-  line-height: 10rem;
-  letter-spacing: -1.7px;
-}
-
-h4 {
-  font-family: var(--primary-font);
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 4.6rem 0 2rem;
-}
-
 .hero-text {
   font-family: var(--secondary-font);
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 2.5rem;
-  margin-bottom: 4.6rem;
+  margin-bottom: 74px;
   max-width: 1154px;
 }
 
@@ -132,12 +153,12 @@ h4 {
 }
 
 .btn {
-  width: 15.5rem;
-  height: 4.5rem;
+  width: 240px;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 16px 48px;
   font-family: var(--secondary-font);
   font-size: 1.5rem;
   font-weight: 400;
@@ -149,6 +170,16 @@ h4 {
   outline: 4px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 .services {
@@ -156,21 +187,15 @@ h4 {
 }
 
 .services-wrapper h2 {
-  margin-left: 5.5rem;
-  margin-bottom: 3rem;
+  margin-left: 88px;
+  margin-bottom: 48px;
 }
 
-.cards-wrapper {
+.cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3.5rem;
-  /* display: grid; */
-  /* margin: 0 40px; */
-  /* align-items: end;
-  height: 100vh;
-  
-  /* gap: 200px; */
+  gap: 56px;
 }
 
 .card {
@@ -191,19 +216,13 @@ h4 {
   left: -40px;
 }
 
-h3 {
-  font-family: var(--primary-font);
-  font-size: 3.5rem;
-  font-weight: 600;
-}
-
 .card-content {
   position: relative;
   width: 674px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .card-text {
@@ -569,13 +588,6 @@ h3 {
 .clients-header {
   position: relative;
 }
-h5 {
-  font-family: var(--secondary-font);
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 2.5rem;
-  text-align: center;
-}
 
 .clients-header svg {
   position: absolute;
@@ -694,32 +706,19 @@ fieldset {
   resize: none;
 }
 
-.message-card button {
+.send-btn {
   position: absolute;
   bottom: -7%;
   left: 7%;
-  width: 240px;
-  height: 64px;
-  padding: 16px 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 48px;
-  border: none;
-  outline: 4px solid rgba(255, 255, 255, 0.3);
   background: var(--main-blue);
   box-shadow: 0px 255px 71px 0px rgba(75, 44, 84, 0),
     0px 163px 65px 0px rgba(75, 44, 84, 0.01),
     0px 92px 55px 0px rgba(75, 44, 84, 0.05),
     0px 41px 41px 0px rgba(75, 44, 84, 0.08),
     0px 10px 22px 0px rgba(75, 44, 84, 0.09);
-  backdrop-filter: blur(10px);
   color: var(--text-light);
-  font-family: var(--secondary-font);
   font-size: 1.25rem;
-  font-weight: 400;
   line-height: 1.25rem;
-  cursor: pointer;
   z-index: 2;
 }
 
@@ -763,22 +762,10 @@ fieldset {
   position: absolute;
   left: 50%;
   transform: rotate(-9.2deg);
-  width: 240px;
-  height: 64px;
-  padding: 16px 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 48px;
-  border: none;
-  outline: 4px solid rgba(255, 255, 255, 0.3);
   background: var(--white);
   color: var(--main-blue);
-  font-family: var(--secondary-font);
   font-size: 1.25rem;
-  font-weight: 400;
   line-height: 1.25rem;
-  cursor: pointer;
 }
 
 .call-card-inner svg {
@@ -864,11 +851,43 @@ fieldset {
   gap: 36px;
 }
 
-.socials a {
+.socials a,
+.legal a,
+.navbar li {
+  position: relative;
+  transition: text-decoration 0.4s ease-in-out;
 }
 
-.socials a:hover {
-  text-decoration: underline;
+.socials a::after,
+.legal a::after,
+.navbar li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--white);
+  transition: width 0.4s ease-in-out;
+}
+
+.navbar li::after {
+  background-color: var(--text-dark);
+}
+
+.socials a:hover,
+.legal a:hover {
+  color: var(--white);
+}
+
+.navbar li:hover {
+  color: var(--text-dark);
+}
+
+.socials a:hover::after,
+.legal a:hover::after,
+.navbar li:hover::after {
+  width: 100%;
 }
 
 .email {
@@ -885,6 +904,8 @@ fieldset {
   gap: 36px;
 }
 
+/* animation for slider */
+
 @keyframes slider {
   from {
     transform: translateX(0);
@@ -893,6 +914,7 @@ fieldset {
     transform: translateX(-100%);
   }
 }
+
 /* animation for bg */
 
 @keyframes moveInCircle {
@@ -942,6 +964,22 @@ fieldset {
   z-index: -1;
   transition: opacity 0.3s ease;
   opacity: 1;
+}
+
+.gradient-bg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  background-image: url(/images/noise.gif);
+  background-position: 0 0;
+  background-size: 480px;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .hidden {
