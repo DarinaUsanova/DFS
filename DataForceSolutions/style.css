@@ -111,14 +111,6 @@ header {
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
 }
 
-.navbar li {
-  transition: transform 0.2s ease-in-out;
-}
-
-.navbar li:hover {
-  transform: scale(1.1);
-}
-
 .hero {
   padding: 36px 0 129px;
 }
@@ -134,7 +126,7 @@ header {
 
 .hero-svg {
   position: absolute;
-  bottom: -42%;
+  bottom: -56%;
   right: 25%;
 }
 
@@ -171,7 +163,7 @@ header {
   backdrop-filter: blur(10px);
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
@@ -204,7 +196,7 @@ header {
   justify-content: space-between;
   width: 1360px;
   color: var(--text-dark);
-  padding: 4rem;
+  padding: 64px;
   background: url(/images/card-bg.svg) no-repeat center;
   position: sticky;
   top: 100px;
@@ -370,7 +362,7 @@ header {
 }
 
 .workflow-box {
-  margin-top: 233px;
+  margin-top: 152px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -379,6 +371,11 @@ header {
 .main-arrow {
   position: relative;
   z-index: -1;
+  transform: scale(0.9);
+}
+
+.mobile-arrow {
+  display: none;
 }
 
 .item-box {
@@ -403,8 +400,8 @@ header {
 
 .workflow-1 {
   position: absolute;
-  top: -140px;
-  left: 70px;
+  top: -9%;
+  left: 7%;
   display: flex;
   flex-direction: column;
 }
@@ -415,8 +412,8 @@ header {
 
 .workflow-2 {
   position: absolute;
-  top: 0;
-  right: 400px;
+  top: 7%;
+  right: 34%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -429,8 +426,8 @@ header {
 
 .workflow-3 {
   position: absolute;
-  top: 200px;
-  right: 0;
+  top: 30%;
+  right: 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -447,8 +444,8 @@ header {
 
 .workflow-4 {
   position: absolute;
-  top: 400px;
-  right: 500px;
+  top: 43%;
+  right: 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -466,8 +463,8 @@ header {
 
 .workflow-5 {
   position: absolute;
-  bottom: 140px;
-  left: 16px;
+  bottom: 15%;
+  left: 1%;
 }
 
 .fifth-box {
@@ -480,8 +477,8 @@ header {
 
 .workflow-6 {
   position: absolute;
-  bottom: -20px;
-  right: 120px;
+  bottom: 3%;
+  right: 11%;
 }
 
 .sixth-box {
@@ -745,6 +742,7 @@ fieldset {
     0px 10px 22px 0px rgba(75, 44, 84, 0.09);
   color: var(--text-light);
   transform: rotate(9.2deg);
+  z-index: 1;
 }
 
 .call-card span {
@@ -779,11 +777,6 @@ fieldset {
   border-radius: 40px;
   outline: 4px solid rgba(255, 255, 255, 0.3);
   background-color: var(--white);
-  box-shadow: 33px 98px 29px 0px rgba(39, 56, 83, 0),
-    21px 63px 26px 0px rgba(39, 56, 83, 0.01),
-    12px 35px 22px 0px rgba(39, 56, 83, 0.05),
-    5px 16px 16px 0px rgba(39, 56, 83, 0.09),
-    1px 4px 9px 0px rgba(39, 56, 83, 0.1);
 }
 
 .airplane {
@@ -797,6 +790,11 @@ fieldset {
   align-items: center;
   padding: 52px 45px 32px 25px;
   z-index: -1;
+  box-shadow: 14px 76px 22px 0px rgba(39, 56, 83, 0),
+    9px 49px 20px 0px rgba(39, 56, 83, 0.01),
+    5px 27px 17px 0px rgba(39, 56, 83, 0.03),
+    2px 12px 12px 0px rgba(39, 56, 83, 0.04),
+    1px 3px 7px 0px rgba(39, 56, 83, 0.05);
 }
 
 .idea {
@@ -809,11 +807,11 @@ fieldset {
   justify-content: center;
   align-items: center;
   padding: 12px 0 19px 9px;
-  box-shadow: 33px 98px 29px 0px rgba(39, 56, 83, 0),
-    21px 63px 26px 0px rgba(39, 56, 83, 0.01),
-    12px 35px 22px 0px rgba(39, 56, 83, 0.05),
-    5px 16px 16px 0px rgba(39, 56, 83, 0.09),
-    1px 4px 9px 0px rgba(39, 56, 83, 0.1);
+  box-shadow: -16px 79px 23px 0px rgba(39, 56, 83, 0),
+    -10px 51px 21px 0px rgba(39, 56, 83, 0.01),
+    -6px 29px 17px 0px rgba(39, 56, 83, 0.05),
+    -3px 13px 13px 0px rgba(39, 56, 83, 0.09),
+    -1px 3px 7px 0px rgba(39, 56, 83, 0.1);
 }
 
 .footer-wrapper {
@@ -897,6 +895,19 @@ fieldset {
   font-weight: 600;
   line-height: 11.25rem;
   letter-spacing: -6.4px;
+  background: linear-gradient(
+    83deg,
+    rgba(38, 223, 253, 1) 0%,
+    rgba(223, 163, 240, 1) 50%,
+    rgba(223, 163, 240, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.1s ease;
+}
+
+.email:hover {
+  color: transparent;
 }
 
 .legal {
@@ -970,16 +981,15 @@ fieldset {
   content: "";
   width: 100%;
   height: 100%;
-  opacity: 0.03;
+  opacity: 0.2;
   background-image: url(/images/noise.gif);
   background-position: 0 0;
   background-size: 480px;
   background-attachment: fixed;
-  position: fixed;
+  position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
+  mix-blend-mode: overlay;
 }
 
 .hidden {
@@ -1101,4 +1111,458 @@ fieldset {
   top: -50%;
   left: -50%;
   opacity: 0.7;
+}
+
+/* adaptive */
+
+@media screen and (max-width: 1403px) {
+  .workflow-6 {
+    right: 9%;
+  }
+  .clients-wrapper {
+    left: 4%;
+  }
+  .email {
+    font-size: 8rem;
+  }
+  .airplane {
+    right: 15%;
+  }
+  .idea {
+    right: 4%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .clients-wrapper {
+    left: 2%;
+  }
+  .card {
+    width: 100%;
+    border-radius: 40px;
+  }
+  .workflow-6 {
+    right: 7%;
+  }
+  .hero-svg {
+    right: 15%;
+  }
+  .airplane {
+    right: 11%;
+  }
+  .idea {
+    right: 1%;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .clients-wrapper {
+    width: 1200px;
+    left: 4%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .email {
+    font-size: 7.5rem;
+    line-height: 9.5rem;
+  }
+  .airplane {
+    right: 9%;
+    width: 120px;
+    height: 160px;
+    padding: 25px 0;
+  }
+  .idea {
+    right: 0%;
+    width: 130px;
+    height: 130px;
+    padding: 20px 0;
+  }
+  .clients-wrapper {
+    left: 6%;
+    width: 1100px;
+  }
+  .main-arrow {
+    transform: scale(0.83);
+  }
+  .workflow-1 {
+    left: 0%;
+  }
+  .workflow-3 {
+    left: 0%;
+  }
+  .workflow-6 {
+    bottom: 7%;
+    right: 10%;
+  }
+  .members-img {
+    padding: 0;
+  }
+  .card {
+    padding: 48px;
+  }
+  .about-wrapper,
+  .technology-wrapper,
+  .workflow-wrapper {
+    padding: 96px 40px;
+  }
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row {
+    gap: 40px;
+  }
+  .workflow-box {
+    margin-top: 132px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clients-wrapper {
+    left: 3%;
+  }
+  .item-box {
+    padding: 12px 24px;
+  }
+  .item-box span {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .workflow-1 {
+    top: -1%;
+    left: 9%;
+  }
+  .workflow-1 svg,
+  .workflow-2 svg,
+  .workflow-3 svg,
+  .workflow-4 svg,
+  .workflow-5 svg,
+  .workflow-6 svg {
+    transform: scale(0.8);
+  }
+  .workflow-2 {
+    top: 9%;
+  }
+  .workflow-3 {
+    right: 1%;
+  }
+  .workflow-6 {
+    bottom: 9%;
+    right: 6%;
+  }
+  .workflow-6 svg {
+    bottom: 50%;
+    right: -30%;
+  }
+  .airplane {
+    padding: 0;
+    right: 6%;
+  }
+  .idea {
+    top: 50%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .email {
+    font-size: 6.5rem;
+    line-height: 8.5rem;
+  }
+  .footer-wrapper {
+    gap: 16px;
+  }
+  h1,
+  h2 {
+    font-size: 8rem;
+    line-height: 8.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+    margin: 50px 24px;
+  }
+  h5 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .hero-text {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    max-width: 980px;
+  }
+  .hero-svg {
+    transform: scale(0.8);
+  }
+  .hero {
+    padding: 36px 0 98px;
+  }
+  .services {
+    padding: 96px 0 102px;
+  }
+  .contact-wrapper {
+    padding: 200px 40px 180px;
+  }
+  .clients-wrapper {
+    padding: 36px;
+    gap: 60px;
+    width: 800px;
+    left: 15%;
+  }
+  .section-text,
+  .about-content-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .members-img {
+    justify-content: space-around;
+  }
+  .member img {
+    height: 247px;
+    width: 242px;
+  }
+  .member span {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .airplane,
+  .idea {
+    display: none;
+  }
+  .first-row,
+  .third-row,
+  .fourth-row {
+    gap: 20px;
+  }
+  .second-row {
+    gap: 8px;
+  }
+  .technology-logos img {
+    transform: scale(0.8);
+    max-width: 170px;
+  }
+  .client-item img {
+    transform: scale(0.8);
+  }
+  .fourth-box {
+    width: 200px;
+  }
+  .sixth-box {
+    width: 200px;
+  }
+  .workflow-6 {
+    bottom: 12%;
+    right: 13%;
+  }
+  .info-box {
+    padding: 0 40px;
+  }
+  .socials {
+    gap: 16px;
+  }
+  .card-text {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .card-content svg,
+  .card-img svg {
+    display: none;
+  }
+  .section-header {
+    gap: 32px;
+  }
+  .about-content {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .email {
+    font-size: 5rem;
+    line-height: 7rem;
+    letter-spacing: normal;
+  }
+  .contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    align-items: flex-start;
+  }
+  .call-card {
+    position: relative;
+    transform: none;
+    align-self: start;
+  }
+  .call-btn {
+    transform: none;
+  }
+  .clients-wrapper {
+    left: 10%;
+  }
+  .technology-logos {
+    margin: 48px 0;
+  }
+  .workflow-box {
+    margin-top: 96px;
+  }
+  .workflow-1 {
+    top: 1%;
+    left: 5%;
+  }
+  .workflow-2 {
+    top: 14%;
+  }
+  .workflow-5 {
+    bottom: 26%;
+  }
+  .workflow-6 {
+    right: 10%;
+  }
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row {
+    padding: 16px 0;
+  }
+  .card-img img {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 956px) {
+  h1,
+  h2 {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+    margin: 50px 24px;
+  }
+  h5 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    max-width: 760px;
+  }
+  .section-text,
+  .about-content-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .subheader svg,
+  .clients-header svg {
+    display: none;
+  }
+  .message-card form {
+    width: 100%;
+    border-radius: 24px;
+    padding: 26px;
+  }
+  .message-card textarea {
+    width: 100%;
+  }
+  .info-box {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .socials {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .main-arrow {
+    display: none;
+  }
+  .mobile-arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  .workflow-1,
+  .workflow-2,
+  .workflow-3,
+  .workflow-4,
+  .workflow-5,
+  .workflow-6 {
+    position: relative;
+    z-index: 1;
+    top: initial;
+    left: initial;
+    right: inherit;
+    bottom: inherit;
+    align-self: center;
+  }
+  .workflow-1 svg,
+  .workflow-2 svg,
+  .workflow-3 svg,
+  .workflow-4 svg,
+  .workflow-5 svg,
+  .workflow-6 svg {
+    display: none;
+  }
+  .workflow-box {
+    flex-direction: column;
+    gap: 46px;
+  }
+  .item-box {
+    padding: 32px 36px;
+    width: 295px;
+  }
+  .item-box span {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+  .workflow-1 {
+    margin-top: 20px;
+  }
+  .first-box,
+  .fourth-box,
+  .fifth-box {
+    transform: rotate(0deg);
+  }
+  .third-box {
+    transform: rotate(-9deg);
+  }
+  .workflow-6 {
+    margin-top: 50px;
+  }
+  .clients-wrapper {
+    width: 600px;
+    left: 17%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .legal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .email {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .logo img {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 860px) {
 }

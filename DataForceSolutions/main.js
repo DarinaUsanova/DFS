@@ -56,7 +56,7 @@ path.style.strokeDashoffset = length;
 
 gsap.to(path, {
   strokeDashoffset: 0,
-  duration: 4,
+  duration: 6,
   ease: "none",
   repeat: -1,
   repeatDelay: 2,
