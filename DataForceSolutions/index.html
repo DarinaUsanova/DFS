@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DataForce Solutions - We focus on creating customized AI strategies that align with your business model and goals" />
+    <meta name="keywords" content="DataForce, Solutions, Data, Science, AI, Machine Learning" />
     <title>DataForce Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +14,12 @@
     />
     <link rel="stylesheet" href="/normaize.css" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" >
+    <link rel="icon" href="/images/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/images/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" href="/images/favicon/android-chrome-512x512.png" sizes="512x512">
   </head>
   <body>
     <div class="page-wrapper">
@@ -41,14 +49,15 @@
         </div>
       <header>
         <nav class="navbar">
-          <ul class="sidebar">
+          <ul class="menu">
             <li><a href="#services-section">services</a></li>
             <li><a href="#about-us-section">about us</a></li>
             <li><a href="#workflow-section">workflow</a></li>
             <li><a href="#technology-section">technology</a></li>
             <li><a href="#contact-section">contacts</a></li>
           </ul>
-          <ul class="menu">
+          <button class="burger"></button>
+          <ul class="menu-mobile">
             <li><a href="#services-section">services</a></li>
             <li><a href="#about-us-section">about us</a></li>
             <li><a href="#workflow-section">workflow</a></li>
@@ -57,6 +66,7 @@
           </ul>
           </nav>
       </header>
+      
       <div class="logo">
         <img src="/images/Logo.svg" alt="logo" />
       </div>
@@ -79,7 +89,7 @@
           <div class="services-wrapper">
             <h2>services</h2>
               <div class="cards">
-                <div class="card" id="card1">
+                <article class="card" id="card1">
                   <div class="card-content">
                     <h3>Artificial Intelligence</h3>
                     <p class="card-text">We focus on creating customized AI strategies that align with your business model and goals, helping you maintain a competitive advantage. We design secure and scalable AI solutions that smoothly integrate into the core of your company, enhancing every aspect of your operations.</p>
@@ -87,8 +97,8 @@
                   <div class="card-img">
                     <img src="/images/card-img-1.png" alt="white and blue abstract shapes">
                   </div>
-                </div>
-                <div class="card" id="card2">
+                </article>
+                <article class="card" id="card2">
                   <div class="card-content">
                     <h3>Data Science and Machine Learning</h3>
                     <p class="card-text">We develop tailored machine learning (ML) solutions to unlock predictive insights and automate decision-making processes. Our approach focuses on understanding your unique challenges and opportunities, enabling us to deliver highly customized,effective ML models.</p>
@@ -96,8 +106,8 @@
                   <div class="card-img">
                     <img src="/images/card-img-2.png" alt="purple and blue abstract shapes">
                   </div>
-                </div>
-                <div class="card" id="card3">
+                </article>
+                <article class="card" id="card3">
                   <div class="card-content">
                     <svg class="decoration-3" width="622" height="117" viewBox="0 0 622 117" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M321.934 5.90677C241.193 8.59542 129.053 -9.50376 52.8857 21.0448C8.67972 38.7746 16.0812 82.2602 57.3016 95.2372C118.424 114.48 190.949 105.62 253.739 100.459C316.156 95.3279 377.621 99.4686 440.024 102.159C483.887 104.049 537.174 102.719 577.871 87.4254C588.668 83.3684 604.639 76.5977 606.279 64.6779C611.953 23.4291 531.877 24.2697 503.303 22.9067C363.336 16.2304 222.136 18.3489 81.8847 15.6615C51.4327 15.078 7.99015 19.5181 3.44637 53.8303C-5.8578 124.091 132.848 114.524 180.763 112.318C261.86 108.585 343.011 106.674 424.182 109.201C478.608 110.896 546.304 118.47 592.731 87.4254C620.326 68.9728 634.479 45.6232 592.731 21.0448" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
@@ -118,8 +128,8 @@
                       </svg>
                     <img src="/images/card-img-3.png" alt="purple, light blue and blue abstract shapes">
                   </div>
-                </div>
-                <div class="card" id="card4">
+                </article>
+                <article class="card" id="card4">
                   <div class="card-content">
                     <h3>Engineering Services</h3>
                     <p class="card-text">Our Engineering Services streamline the entire product lifecycle, from
@@ -128,7 +138,7 @@
                   <div class="card-img">
                     <img src="/images/card-img-4.png" alt="purple and light blue abstract shapes">
                   </div>
-                </div>
+                </article>
             </div>
         </section>
         <section class="about" id="about-us-section">
@@ -169,15 +179,15 @@
               </div>
               <div class="members-img">
                 <div class="member">
-                  <img src="/images/iryna.svg" alt="Image of Iryna" loading="lazy">
+                  <img src="/images/iryna.svg" alt="Image of Iryna Kondrashchenko, board member" loading="lazy">
                   <span>Iryna<br>Kondrashchenko</span>
                 </div>
                 <div class="member">
-                  <img src="/images/oleh.svg" alt="Image of Oleh" loading="lazy">
+                  <img src="/images/oleh.svg" alt="Image of Oleh Kostromin, board member" loading="lazy">
                   <span>Oleh<br>Kostromin</span>
                 </div>
                 <div class="member">
-                  <img src="/images/nikita.svg" alt="Image of Nikita" loading="lazy">
+                  <img src="/images/nikita.svg" alt="Image of Nikita Gonchar, board member" loading="lazy">
                   <span>Nikita<br>Gonchar</span>
                 </div>
               </div>
@@ -259,7 +269,7 @@
                   <svg class="flag" width="196" height="188" viewBox="0 0 196 188" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M88.4184 76.6331C88.828 77.2101 89.819 76.9418 89.3393 76.5455M101.16 35.329C94.0665 31.471 83.4281 30.6665 76.7311 35.6619C72.5262 38.7983 66.251 45.5137 61.7872 52.7457M61.7872 52.7457C55.0892 63.5972 52.4694 75.6119 67.0416 78.4445C78.4183 80.6559 89.0703 69.5711 80.4663 59.9255C76.1481 55.0846 68.6817 53.6736 61.7872 52.7457ZM61.7872 52.7457C59.4662 52.4333 57.2101 52.1756 55.1606 51.8603M48.286 3.16832L46.6938 9.51232M46.6938 9.51232L25.8856 92.4246M46.6938 9.51232C44.546 9.18608 42.3895 8.85803 40.2235 8.52799M46.6938 9.51232C96.7871 17.1213 142.148 23.7537 192.571 31.9612M25.8856 92.4246L2.53349 185.473M25.8856 92.4246C80.2802 92.0946 173.39 93.858 172.023 93.2078L133.721 60.4066C153.26 51.1216 172.79 41.8278 192.406 32.6738M25.8856 92.4246C23.4764 92.4392 21.1432 92.4579 18.8975 92.4811" stroke="#1C2B40" stroke-width="5" stroke-linecap="round"/>
                   </svg> 
-                </div>                              
+                </div>
               </div>
             </div>
         </section>
@@ -365,7 +375,7 @@
                   </div>
                   <fieldset>
                     <label for="message">message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" required minlength="10"></textarea>
                   </fieldset>
                   <span>all the fields are required</span>
                   <button class="btn send-btn" type="submit">send</button>
@@ -394,19 +404,20 @@
           <div class="info-box">
               <span class="footer-info">Mengerstrasse 8/18, 4040, Linz, Austria</span>
             <div class="socials">
-              <a href="#"><span class="footer-info">X (Twitter)</span></a>
-              <a href="https://www.instagram.com/dataforce_solutions"><span class="footer-info">Instagram</span></a>
-              <a href="#"><span class="footer-info">LinkedIn</span></a>
+              <a href="#" target="_blank"><span class="footer-info">X (Twitter)</span></a>
+              <a href="https://www.instagram.com/dataforce_solutions" target="_blank"><span class="footer-info">Instagram</span></a>
+              <a href="#" target="_blank"><span class="footer-info">LinkedIn</span></a>
             </div>
           </div>
-          <a class="email" href="mailto:hi@dataforce.solutions">hi@dataforce.solutions</a>
+          <a class="email" href="mailto:hi@dataforce.solutions" target="_blank">hi@dataforce.solutions</a>
             <div class="legal">
-              <a href="#"><span class="footer-info">Privacy guidelines</span></a>
-              <a href="#"><span class="footer-info">Legal information</span></a>
+              <a href="#" target="_blank"><span class="footer-info">Privacy guidelines</span></a>
+              <a href="#" target="_blank"><span class="footer-info">Legal information</span></a>
               <span class="footer-info">© DataForce Solutions GmbH 2024</span>
             </div>
         </div>
       </footer>
+      <figure></figure>
     </div>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
