@@ -97,7 +97,22 @@ header {
   backdrop-filter: blur(10px);
 }
 
-.navbar ul {
+.sidebar {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 327px;
+  height: 396px;
+  background: var(--white);
+  z-index: 5;
+  display: none;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 32px;
+  list-style: none;
+}
+
+.menu {
   display: flex;
   list-style: none;
   gap: 24px;
@@ -268,6 +283,10 @@ header {
   position: absolute;
   top: -1%;
   right: 10%;
+}
+
+.mobile {
+  display: none;
 }
 
 .section-header {
@@ -1565,4 +1584,247 @@ fieldset {
 }
 
 @media screen and (max-width: 860px) {
+  .message-card form {
+    width: 700px;
+  }
+  .message-card input {
+    width: 271px;
+  }
+  .form-top {
+    justify-content: space-between;
+  }
+  .technology-logos {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  .logos {
+    display: inline-flex;
+    animation: slider 20s linear infinite;
+    flex-wrap: nowrap;
+  }
+  .logos::after {
+    content: "";
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .member img {
+    width: 142px;
+    height: 147px;
+  }
+  .member {
+    gap: 8px;
+  }
+  .members-img {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  h1,
+  h2 {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.44px;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+    margin: 20px 0 32px;
+  }
+  h5 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .hero-text {
+    max-width: 268px;
+    margin-bottom: 40px;
+  }
+  .section-text,
+  .about-content-text {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+  .btn {
+    padding: 12px 32px;
+    width: 160px;
+    height: 48px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hero-svg {
+    display: none;
+  }
+  .hero {
+    padding: 0;
+    margin: 46px 0 73px;
+  }
+  .services {
+    padding: 0 0 44px;
+  }
+  .card {
+    background: url(/images/card-bg-mobile.svg) no-repeat center;
+    width: 327px;
+    height: 397px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 24px 28px 38px 24px;
+    gap: 20px;
+  }
+  .card-img img {
+    width: 275px;
+    height: 140px;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+  .card-text {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    margin-left: 16px;
+  }
+  .card-content {
+    width: 275px;
+    gap: 12px;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .about-wrapper {
+    padding: 48px 24px;
+  }
+  .technology-wrapper {
+    padding: 48px 24px 127px;
+  }
+  .contact-wrapper {
+    padding: 120px 24px 68px;
+  }
+  .section-header {
+    gap: 26px;
+    max-width: 313px;
+  }
+  .about-content {
+    margin-top: 36px;
+  }
+  .about-content-text {
+    padding-bottom: 24px;
+  }
+  .members-content {
+    margin-top: 36px;
+    gap: 24px;
+  }
+  .members-img {
+    gap: 16px;
+  }
+  .workflow-box {
+    margin-top: 24px;
+  }
+  .technology-logos {
+    margin: 24px 0;
+  }
+  .clients-wrapper {
+    width: 327px;
+    padding: 32px 24px;
+    gap: 32px;
+    left: 25%;
+    bottom: -15%;
+  }
+  .contact-items {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .message-card form {
+    width: 327px;
+    height: 400px;
+    gap: 16px;
+  }
+  .form-top {
+    flex-direction: column;
+    gap: 12px;
+  }
+  fieldset {
+    gap: 8px;
+  }
+  .message-card label {
+    font-size: 0.75rem;
+  }
+  .message-card input {
+    width: 271px;
+    height: 40px;
+    padding: 8px 16px;
+    font-size: 0.75rem;
+  }
+  .message-card textarea {
+    width: 271px;
+    height: 98px;
+    padding: 16px;
+    font-size: 0.75rem;
+  }
+  .message-card span {
+    font-size: 0.75rem;
+    margin-right: 0;
+  }
+  .call-card-inner svg {
+    display: none;
+  }
+  .call-card {
+    width: 327px;
+    padding: 24px 16px;
+    text-align: center;
+    align-self: center;
+  }
+  .call-card span {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+  .call-btn,
+  .send-btn {
+    padding: 12px 48px;
+    width: auto;
+  }
+  .call-btn {
+    bottom: -115%;
+  }
+  .email {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -1.6px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* .members-img {
+    gap: 0;
+  } */
+  .member:nth-child(3) {
+    margin-top: 42px;
+  }
+  .clients-wrapper {
+    left: 5%;
+  }
+  .services-wrapper h2 {
+    margin-bottom: 24px;
+  }
+  .footer-wrapper {
+    padding: 48px 0;
+    gap: 32px;
+  }
+  .info-box {
+    padding: 0 24px;
+  }
+  .footer-info {
+    font-size: 0.87rem;
+    line-height: 1.125rem;
+    text-align: left;
+  }
+  .legal {
+    gap: 12px;
+  }
 }

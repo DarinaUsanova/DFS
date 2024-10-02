@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const sidebar = document.querySelector(".sidebar");
+
 //lenis
 const lenis = new Lenis();
 lenis.on("scroll", ScrollTrigger.update);
