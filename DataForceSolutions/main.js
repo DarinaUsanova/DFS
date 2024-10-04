@@ -1,6 +1,3 @@
-// import "./assets/style.css";
-// import "./assets/normaize.css";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const sidebar = document.querySelector(".sidebar");

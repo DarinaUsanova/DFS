@@ -105,7 +105,7 @@ header {
   position: absolute;
   top: 24px;
   padding-left: 40px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .navbar {
@@ -707,7 +707,7 @@ header {
   background: linear-gradient(to right, transparent 80%, #fff 100%),
     linear-gradient(to left, transparent 80%, #fff 100%);
   pointer-events: none;
-  z-index: 3;
+  z-index: 2;
 }
 
 .clients {
@@ -1004,6 +1004,7 @@ fieldset {
   background-clip: text;
   -webkit-background-clip: text;
   transition: color 0.1s ease;
+  padding-right: 3px;
 }
 
 .email:hover {
@@ -1019,7 +1020,7 @@ fieldset {
 
 @keyframes slider {
   from {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(-100%);
@@ -1355,13 +1356,9 @@ fieldset {
     bottom: 50%;
     right: -30%;
   }
+  .idea,
   .airplane {
-    padding: 0;
-    right: 6%;
-  }
-  .idea {
-    top: 50%;
-    padding: 0;
+    display: none;
   }
 }
 
@@ -1430,10 +1427,6 @@ fieldset {
 }
 
 @media screen and (max-width: 1130px) {
-  .airplane,
-  .idea {
-    display: none;
-  }
   .first-row,
   .third-row,
   .fourth-row {
@@ -1678,16 +1671,44 @@ fieldset {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
+    position: relative;
+    width: 100%;
+    height: 105px;
   }
-  .logos {
+  /* .logos {
     display: inline-flex;
     animation: slider 20s linear infinite;
     flex-wrap: nowrap;
+  } */
+  .first-half,
+  .second-half {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+    transform: translate(100%, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200%;
+    animation: slider 40s linear infinite forwards;
   }
-  .logos::after {
-    content: "";
-    display: inline-flex;
-    flex-direction: row;
+  .second-half {
+    animation-delay: 20s;
+  }
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row {
+    display: contents;
+  }
+  .first-half img,
+  .second-half img {
+    width: 100%;
+    height: 100%;
+    margin: 8px;
+    align-self: center;
   }
   .member img {
     width: 142px;
