@@ -5,6 +5,8 @@ const burger = document.querySelector(".burger");
 const menuMobile = document.querySelector(".menu-mobile");
 const navLinks = document.querySelectorAll(".menu-mobile .is-active a");
 const overlayer = document.querySelector("figure");
+const cookies = document.querySelector(".cookies");
+const cookiesBtn = document.querySelector(".cookies button");
 
 //lenis
 const lenis = new Lenis();
@@ -132,3 +134,10 @@ function handleCloseOnClickOutside(event) {
 }
 
 setupCloseEvents();
+
+//cookies banner
+
+cookiesBtn.addEventListener("click", () => {
+  console.log("cookies");
+  cookies.classList.add("cookies-hide");
+});
