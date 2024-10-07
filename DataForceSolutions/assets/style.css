@@ -75,7 +75,7 @@ h5 {
   position: fixed;
   bottom: 40px;
   right: 20px;
-  width: 550px;
+  width: 420px;
   padding: 16px 24px;
   font-family: var(--secondary-font);
   color: var(--text-dark);
@@ -85,7 +85,7 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 28px;
+  gap: 16px;
   border-radius: 30px;
   z-index: 3;
 }
@@ -101,18 +101,26 @@ h5 {
 }
 
 .cookies-header span {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 2.5rem;
 }
 
+.cookies-header svg {
+  width: 60px;
+  height: 60px;
+}
+
 .cookies p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 2rem;
 }
 
 .cookies button {
+  height: 44px;
+  width: auto;
+  font-size: 1.125rem;
   background: var(--main-blue);
   color: var(--text-light);
 }
@@ -133,7 +141,6 @@ figure {
 
 figure.visible {
   opacity: 1;
-  pointer-events: all;
 }
 
 header {
@@ -203,7 +210,7 @@ header {
   border: 2px solid rgba(236, 233, 242, 0.3);
   /* background: rgba(255, 255, 255, 0.13); */
   backdrop-filter: blur(10px);
-  z-index: 100;
+  z-index: 10;
 }
 .burger::before,
 .burger::after {
@@ -844,9 +851,16 @@ fieldset {
   font-family: var(--secondary-font);
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.125rem;
   text-transform: uppercase;
   resize: none;
+  scrollbar-width: none;
+}
+
+.message-card input::placeholder,
+.message-card textarea::placeholder {
+  color: var(--text-dark);
+  opacity: 0.5;
 }
 
 .send-btn {
@@ -1065,10 +1079,19 @@ fieldset {
 /* animation for slider */
 
 @keyframes slider {
-  from {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slider2 {
+  0% {
     transform: translateX(100%);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 }
@@ -1717,14 +1740,22 @@ fieldset {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    position: relative;
     width: 100%;
-    height: 105px;
+    height: 150px;
   }
   /* .logos {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    width: 200%;
     animation: slider 20s linear infinite;
     flex-wrap: nowrap;
+  }
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row {
+    width: 100%;
+    margin: 0 50px;
   } */
   .first-half,
   .second-half {
@@ -1737,18 +1768,13 @@ fieldset {
     position: absolute;
     top: 0;
     right: 0;
-    width: 200%;
-    animation: slider 40s linear infinite forwards;
+    width: 290%;
+    animation: slider2 20s linear infinite forwards;
   }
   .second-half {
-    animation-delay: 20s;
+    animation-delay: 10s;
   }
-  .first-row,
-  .second-row,
-  .third-row,
-  .fourth-row {
-    display: contents;
-  }
+
   .first-half img,
   .second-half img {
     width: 100%;
@@ -1958,6 +1984,26 @@ fieldset {
     line-height: 2.5rem;
     letter-spacing: -1.6px;
   }
+  .cookies {
+    width: 225px;
+    gap: 16px;
+    padding: 16px 24px;
+  }
+  .cookies-header {
+    gap: 8px;
+  }
+  .cookies-header span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .cookies-header svg {
+    width: 40px;
+    height: 40px;
+  }
+  .cookies p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1987,5 +2033,8 @@ fieldset {
   }
   .legal {
     gap: 12px;
+  }
+  .logos {
+    gap: 80px;
   }
 }

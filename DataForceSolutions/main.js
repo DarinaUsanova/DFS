@@ -28,6 +28,50 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+//burger menu
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("is-active");
+  menuMobile.classList.toggle("is-active");
+  overlayer.classList.toggle("visible");
+});
+
+function closeMenu() {
+  burger.classList.remove("is-active");
+  menuMobile.classList.remove("is-active");
+  overlayer.classList.remove("visible");
+}
+
+function setupCloseEvents() {
+  window.addEventListener("resize", handleCloseOnResize);
+  window.addEventListener("keydown", handleCloseOnEscape);
+  navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+  document.addEventListener("click", handleCloseOnClickOutside);
+}
+
+function handleCloseOnResize() {
+  if (window.innerWidth > 860) {
+    closeMenu();
+  }
+}
+
+function handleCloseOnEscape(e) {
+  if (e.key === "Escape") {
+    closeMenu();
+  }
+}
+
+function handleCloseOnClickOutside(event) {
+  if (
+    !event.target.closest(".burger") &&
+    burger.classList.contains("is-active")
+  ) {
+    closeMenu();
+  }
+}
+
+setupCloseEvents();
+
 // blobs animation
 document.addEventListener("DOMContentLoaded", () => {
   const interBubble = document.querySelector(".interactive");
@@ -90,50 +134,6 @@ gsap.to(".gradient-bg", {
     onLeaveBack: () => gsap.to(".gradient-bg", { opacity: 1 }),
   },
 });
-
-//burger menu
-
-burger.addEventListener("click", () => {
-  burger.classList.toggle("is-active");
-  menuMobile.classList.toggle("is-active");
-  overlayer.classList.toggle("visible");
-});
-
-function closeMenu() {
-  burger.classList.remove("is-active");
-  menuMobile.classList.remove("is-active");
-  overlayer.classList.remove("visible");
-}
-
-function setupCloseEvents() {
-  window.addEventListener("resize", handleCloseOnResize);
-  window.addEventListener("keydown", handleCloseOnEscape);
-  navLinks.forEach((link) => link.addEventListener("click", closeMenu));
-  document.addEventListener("click", handleCloseOnClickOutside);
-}
-
-function handleCloseOnResize() {
-  if (window.innerWidth > 860) {
-    closeMenu();
-  }
-}
-
-function handleCloseOnEscape(e) {
-  if (e.key === "Escape") {
-    closeMenu();
-  }
-}
-
-function handleCloseOnClickOutside(event) {
-  if (
-    !event.target.closest(".burger") &&
-    burger.classList.contains("is-active")
-  ) {
-    closeMenu();
-  }
-}
-
-setupCloseEvents();
 
 //cookies banner
 
