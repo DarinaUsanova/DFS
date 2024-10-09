@@ -493,6 +493,13 @@ header {
   gap: 12px;
 }
 
+.member img {
+  width: 350px;
+  height: 335px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
 .member span {
   text-align: center;
   font-family: var(--primary-font);
