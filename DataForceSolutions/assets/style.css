@@ -736,6 +736,7 @@ header {
 
 .clients-wrapper {
   position: absolute;
+  z-index: 1;
   bottom: -12%;
   background-color: var(--white);
   color: var(--text-dark);
