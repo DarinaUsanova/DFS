@@ -57,7 +57,7 @@ h4 {
   margin: 74px 0 32px;
 }
 
-h5 {
+.clients-header span {
   font-family: var(--secondary-font);
   font-size: 2.5rem;
   font-weight: 600;
@@ -178,7 +178,7 @@ header {
   right: 0;
   width: 327px;
   height: 396px;
-  background: url(/images/card-bg-mobile.svg) no-repeat center;
+  background: url(/images/bg-mob.svg) no-repeat center;
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -746,6 +746,7 @@ header {
 .clients-header svg {
   position: absolute;
   left: 30%;
+  bottom: -12px;
 }
 
 .clients-slider {
@@ -1385,7 +1386,7 @@ fieldset {
   .second-row,
   .third-row,
   .fourth-row {
-    gap: 40px;
+    gap: 30px;
   }
   .workflow-box {
     margin-top: 132px;
@@ -1455,7 +1456,7 @@ fieldset {
     font-size: 2.5rem;
     margin: 50px 24px;
   }
-  h5 {
+  .clients-header span {
     font-size: 2rem;
     line-height: 2rem;
   }
@@ -1508,9 +1509,12 @@ fieldset {
   .second-row {
     gap: 8px;
   }
-  .technology-logos img {
+  .first-row img,
+  .second-row img,
+  .third-row img,
+  .fourth-row img {
     transform: scale(0.8);
-    /* max-width: 170px; */
+    max-width: 170px;
   }
   .client-item img {
     transform: scale(0.8);
@@ -1614,7 +1618,7 @@ fieldset {
     font-size: 2.5rem;
     margin: 50px 24px;
   }
-  h5 {
+  .clients-header span {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
@@ -1759,6 +1763,7 @@ fieldset {
     flex-wrap: nowrap;
     gap: 20px;
     animation: slider2 20s linear infinite;
+    will-change: transform;
   }
   .box {
     padding: 8px 16px;
@@ -1808,7 +1813,7 @@ fieldset {
     font-size: 1.5rem;
     margin: 20px 0 32px;
   }
-  h5 {
+  .clients-header span {
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -1839,7 +1844,7 @@ fieldset {
     padding: 0 0 44px;
   }
   .card {
-    background: url(/images/card-bg-mobile.svg) no-repeat center;
+    background: url(/images/bg-mob.svg) no-repeat center;
     width: 327px;
     height: 397px;
     flex-direction: column-reverse;

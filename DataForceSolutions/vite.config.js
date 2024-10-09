@@ -1,5 +1,7 @@
 import { build } from "vite";
 import { resolve } from "path";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import { defineConfig } from "vite";
 
 export default {
   build: {
@@ -10,4 +12,11 @@ export default {
       },
     },
   },
+  plugins: [
+    ViteImageOptimizer({
+      png: {
+        quality: 85,
+      },
+    }),
+  ],
 };

@@ -5,8 +5,6 @@ const burger = document.querySelector(".burger");
 const menuMobile = document.querySelector(".menu-mobile");
 const navLinks = document.querySelectorAll(".menu-mobile .is-active a");
 const overlayer = document.querySelector("figure");
-const cookies = document.querySelector(".cookies");
-const cookiesBtn = document.querySelector(".cookies button");
 
 //lenis
 const lenis = new Lenis();
@@ -137,7 +135,30 @@ gsap.to(".gradient-bg", {
 
 //cookies banner
 
-cookiesBtn.addEventListener("click", () => {
-  console.log("cookies");
-  cookies.classList.add("cookies-hide");
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.querySelector(".cookies");
+  const closeBtn = document.getElementById("cookies-btn-close");
+
+  if (!banner || !closeBtn) {
+    console.warn("Cookies banner or close button not found.");
+    return;
+  }
+
+  const DAYS_TO_KEEP_BANNER = 30;
+  const cookieBannerCloseDate = localStorage.getItem("bannerCloseDate");
+
+  if (cookieBannerCloseDate) {
+    const closeDate = new Date(cookieBannerCloseDate);
+    const now = new Date();
+    const diffInDays = (now - closeDate) / (1000 * 60 * 60 * 24);
+
+    if (diffInDays <= DAYS_TO_KEEP_BANNER) {
+      banner.classList.add("cookies-hide");
+    }
+  }
+
+  closeBtn.addEventListener("click", function () {
+    banner.classList.add("cookies-hide");
+    localStorage.setItem("bannerCloseDate", new Date().toISOString());
+  });
 });
