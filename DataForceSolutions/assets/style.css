@@ -31,7 +31,7 @@
   --color5: 38, 115, 253;
   --color-interactive: 163, 219, 240;
   --circle-size: 80%;
-  --circle-size-small: 500px;
+  --circle-size-small: 900px;
   --blending: hard-light;
 }
 
@@ -82,7 +82,7 @@ h4 {
   color: var(--text-dark);
   background: var(--white);
   outline: 6px solid rgba(0, 89, 255, 0.7);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -93,6 +93,10 @@ h4 {
 
 .cookies-hide {
   display: none;
+}
+
+.cookies-active {
+  display: flex;
 }
 
 .cookies-header {
@@ -116,6 +120,7 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2rem;
+  margin-bottom: 12px;
 }
 
 .cookies button {

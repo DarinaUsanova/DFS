@@ -152,12 +152,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const now = new Date();
     const diffInDays = (now - closeDate) / (1000 * 60 * 60 * 24);
 
-    if (diffInDays <= DAYS_TO_KEEP_BANNER) {
+    if (diffInDays > DAYS_TO_KEEP_BANNER) {
+      banner.classList.add("cookies-active");
+    } else {
       banner.classList.add("cookies-hide");
     }
+  } else {
+    banner.classList.add("cookies-active");
   }
 
   closeBtn.addEventListener("click", function () {
+    banner.classList.remove("cookies-active");
     banner.classList.add("cookies-hide");
     localStorage.setItem("bannerCloseDate", new Date().toISOString());
   });
