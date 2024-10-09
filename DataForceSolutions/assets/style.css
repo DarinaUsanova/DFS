@@ -31,6 +31,7 @@
   --color5: 38, 115, 253;
   --color-interactive: 163, 219, 240;
   --circle-size: 80%;
+  --circle-size-small: 20%;
   --blending: hard-light;
 }
 
@@ -2020,6 +2021,9 @@ fieldset {
   .clients-wrapper {
     left: 7%;
   }
+  .clients {
+    gap: 24px;
+  }
   .services-wrapper h2 {
     margin-bottom: 24px;
   }
@@ -2040,5 +2044,42 @@ fieldset {
   }
   .logos {
     gap: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gradient-bg .g1 {
+    width: var(--circle-size-small);
+    height: var(--circle-size-small);
+    top: calc(50% - var(--circle-size-small) / 2);
+    left: calc(50% - var(--circle-size-small) / 2);
+  }
+
+  .gradient-bg .g2 {
+    width: var(--circle-size-small);
+    height: var(--circle-size-small);
+    top: calc(50% - var(--circle-size-small) / 2);
+    left: calc(50% - var(--circle-size-small) / 2);
+  }
+
+  .gradient-bg .g3 {
+    width: var(--circle-size-small);
+    height: var(--circle-size-small);
+    top: calc(50% - var(--circle-size-small) / 2 + 10px);
+    left: calc(50% - var(--circle-size-small) / 2 - 30px);
+  }
+
+  .gradient-bg .g4 {
+    width: var(--circle-size-small);
+    height: var(--circle-size-small);
+    top: calc(50% - var(--circle-size-small) / 2);
+    left: calc(50% - var(--circle-size-small) / 2);
+  }
+
+  .gradient-bg .g5 {
+    width: var(--circle-size-small);
+    height: var(--circle-size-small);
+    top: calc(50% - var(--circle-size-small));
+    left: calc(50% - var(--circle-size-small));
   }
 }
