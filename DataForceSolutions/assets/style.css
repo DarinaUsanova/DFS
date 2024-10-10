@@ -1961,13 +1961,13 @@ button {
     width: 271px;
     height: 40px;
     padding: 8px 16px;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .message-card textarea {
     width: 271px;
     height: 98px;
     padding: 16px;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .message-card span {
     font-size: 0.75rem;
