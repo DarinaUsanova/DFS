@@ -835,6 +835,11 @@ fieldset {
   padding: 0;
 }
 
+input,
+button {
+  touch-action: manipulation;
+}
+
 .message-card label {
   color: var(--text-light);
   font-family: var(--secondary-font);
