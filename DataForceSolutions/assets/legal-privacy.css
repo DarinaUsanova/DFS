@@ -1,3 +1,5 @@
+/* legal */
+
 .german,
 .english {
   display: flex;
@@ -46,6 +48,53 @@
   cursor: pointer;
 }
 
+/* privacy */
+
+.privacy {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+  gap: 65px;
+}
+.privacy-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.privacy-header h3 {
+  color: var(--main-blue);
+}
+.privacy-header p {
+  color: var(--text-dark);
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.privacy-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid var(--text-dark);
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  font-family: var(--secondary-font);
+}
+.text-block h6 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.text-block p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
 @media screen and (max-width: 700px) {
   .german,
   .english {

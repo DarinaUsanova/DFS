@@ -9,6 +9,7 @@ export default {
       input: {
         main: resolve(__dirname, "index.html"),
         legal: resolve(__dirname, "legal.html"),
+        privacy: resolve(__dirname, "privacy.html"),
       },
     },
   },
