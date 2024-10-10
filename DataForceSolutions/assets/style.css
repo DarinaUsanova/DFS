@@ -1944,8 +1944,8 @@ button {
   }
   .message-card form {
     width: 327px;
-    height: 400px;
-    gap: 16px;
+    height: 450px;
+    gap: 12px;
   }
   .form-top {
     flex-direction: column;
@@ -1965,7 +1965,7 @@ button {
   }
   .message-card textarea {
     width: 271px;
-    height: 98px;
+    height: 170px;
     padding: 16px;
     font-size: 1rem;
   }
