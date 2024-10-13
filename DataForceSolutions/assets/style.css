@@ -39,19 +39,19 @@ h1,
 h2 {
   color: var(--text-dark);
   font-family: var(--primary-font);
-  font-size: 10.6rem;
+  font-size: 10.5rem;
   font-weight: 600;
   line-height: 10rem;
   letter-spacing: -1.7px;
 }
 
-h3 {
+h4 {
   font-family: var(--primary-font);
   font-size: 3.5rem;
   font-weight: 600;
 }
 
-h4 {
+h3 {
   font-family: var(--primary-font);
   font-size: 3rem;
   font-weight: 600;
@@ -1363,6 +1363,63 @@ button {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  h1,
+  h2 {
+    font-size: 10rem;
+    letter-spacing: -1.5px;
+    line-height: 9.5rem;
+  }
+  h3 {
+    font-size: 2.5em;
+    margin: 40px 0 24px;
+  }
+  .hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+  }
+  .section-text {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  .about-content-text {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    padding-bottom: 32px;
+  }
+  .about-content {
+    margin-top: 96px;
+  }
+  .subheader svg {
+    bottom: 0;
+  }
+  .members-content {
+    margin-top: 96px;
+  }
+  .workflow-3 {
+    right: -1%;
+  }
+  .section-header {
+    gap: 44px;
+  }
+  .clients-wrapper {
+    left: 3%;
+  }
+  .hero-svg {
+    right: 18%;
+    bottom: -68%;
+  }
+  .workflow-6 {
+    right: 5%;
+  }
+  .flag {
+    right: -100px;
+  }
+  .message-card span {
+    margin-right: 240px;
+  }
+}
+
 @media screen and (max-width: 1270px) {
   .email {
     font-size: 7.5rem;
@@ -1406,7 +1463,7 @@ button {
   .about-wrapper,
   .technology-wrapper,
   .workflow-wrapper {
-    padding: 96px 40px;
+    padding: 76px 40px;
   }
   .first-row,
   .second-row,
@@ -1415,7 +1472,7 @@ button {
     gap: 30px;
   }
   .workflow-box {
-    margin-top: 132px;
+    margin-top: 102px;
   }
 }
 
@@ -1475,10 +1532,10 @@ button {
     font-size: 8rem;
     line-height: 8.5rem;
   }
-  h3 {
+  h4 {
     font-size: 3rem;
   }
-  h4 {
+  h3 {
     font-size: 2.5rem;
     margin: 50px 24px;
   }
@@ -1637,10 +1694,10 @@ button {
     font-size: 6rem;
     line-height: 6.5rem;
   }
-  h3 {
+  h4 {
     font-size: 2rem;
   }
-  h4 {
+  h3 {
     font-size: 2.5rem;
     margin: 50px 24px;
   }
@@ -1832,10 +1889,10 @@ button {
     line-height: 2.75rem;
     letter-spacing: -0.44px;
   }
-  h3 {
+  h4 {
     font-size: 1.25rem;
   }
-  h4 {
+  h3 {
     font-size: 1.5rem;
     margin: 20px 0 32px;
   }
@@ -2022,9 +2079,6 @@ button {
 }
 
 @media screen and (max-width: 500px) {
-  /* .members-img {
-    gap: 0;
-  } */
   .member:nth-child(3) {
     margin-top: 42px;
   }
@@ -2036,6 +2090,7 @@ button {
   }
   .services-wrapper h2 {
     margin-bottom: 24px;
+    padding-top: 24px;
   }
   .footer-wrapper {
     padding: 48px 0;
