@@ -1,4 +1,5 @@
 const form = document.getElementById("contact-form");
+const message = document.querySelector(".user-message");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -16,13 +17,22 @@ form.addEventListener("submit", (event) => {
     .then((res) => {
       console.log(res);
       if (!res.ok) {
-        document.querySelector(".message-card textarea").style.border =
-          "2px solid red";
-        throw new Error("Something went wrong");
+        message.innerHTML = "something went wrong, try again.";
+        message.style.color = "#F3341F";
+        showMessageTemporarily();
+        throw new Error("something went wrong");
       }
-      document.querySelector(".message-card textarea").style.border =
-        "2px solid green";
+      message.innerHTML = "thanks for your message!";
+      message.style.color = "#A1FF95";
+      form.reset();
+      showMessageTemporarily();
       console.log(res.json());
     })
     .catch((err) => console.log(err));
 });
+
+function showMessageTemporarily() {
+  setTimeout(() => {
+    message.innerHTML = "";
+  }, 5000);
+}

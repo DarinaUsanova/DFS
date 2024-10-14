@@ -445,6 +445,7 @@ header {
 .subheader svg {
   position: absolute;
   left: 50px;
+  bottom: 10px;
 }
 
 .about-content {
@@ -706,6 +707,7 @@ header {
   gap: 16px;
   border-top: 2px solid var(--white);
   border-bottom: 2px solid var(--white);
+  height: 599px;
 }
 
 .mobile-logos {
@@ -804,6 +806,9 @@ header {
 
 .contact-wrapper {
   padding: 292px 40px 226px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .contact-items {
@@ -812,7 +817,7 @@ header {
 
 .message-card form {
   position: relative;
-  margin-top: 76px;
+  /* margin-top: 76px; */
   padding: 40px;
   width: 879px;
   height: 479px;
@@ -910,14 +915,22 @@ button {
   z-index: 2;
 }
 
-.message-card span {
-  align-self: flex-end;
+.form-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.required,
+.user-message {
   color: var(--text-light);
   font-family: var(--secondary-font);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
-  margin-right: 80px;
+}
+
+.required {
+  margin-right: 100px;
 }
 
 .call-card {
@@ -1224,6 +1237,7 @@ button {
   transform-origin: center center;
   animation: moveVertical 30s ease infinite;
   opacity: 1;
+  will-change: transform;
 }
 
 .gradient-bg .g2 {
@@ -1242,6 +1256,7 @@ button {
   transform-origin: calc(50% - 400px);
   animation: moveInCircle 20s reverse infinite;
   opacity: 1;
+  will-change: transform;
 }
 
 .gradient-bg .g3 {
@@ -1260,6 +1275,7 @@ button {
   transform-origin: calc(50% + 400px);
   animation: moveInCircle 40s linear infinite;
   opacity: 1;
+  will-change: transform;
 }
 
 .gradient-bg .g4 {
@@ -1278,6 +1294,7 @@ button {
   transform-origin: calc(50% - 200px);
   animation: moveHorizontal 40s ease infinite;
   opacity: 0.7;
+  will-change: transform;
 }
 
 .gradient-bg .g5 {
@@ -1296,6 +1313,7 @@ button {
   transform-origin: calc(50% - 800px) calc(50% + 200px);
   animation: moveInCircle 20s ease infinite;
   opacity: 1;
+  will-change: transform;
 }
 
 .gradient-bg .interactive {
@@ -1312,6 +1330,7 @@ button {
   top: -50%;
   left: -50%;
   opacity: 0.7;
+  will-change: transform;
 }
 
 /* adaptive */
@@ -1331,6 +1350,9 @@ button {
   }
   .idea {
     right: 4%;
+  }
+  .required {
+    margin-right: 130px;
   }
 }
 
@@ -1354,12 +1376,18 @@ button {
   .idea {
     right: 1%;
   }
+  .required {
+    margin-right: 180px;
+  }
 }
 
 @media screen and (max-width: 1320px) {
   .clients-wrapper {
     width: 1200px;
     left: 4%;
+  }
+  .required {
+    margin-right: 240px;
   }
 }
 
@@ -1415,7 +1443,7 @@ button {
   .flag {
     right: -100px;
   }
-  .message-card span {
+  .required {
     margin-right: 240px;
   }
 }
@@ -1474,6 +1502,27 @@ button {
   .workflow-box {
     margin-top: 102px;
   }
+  .required {
+    margin-right: 260px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .idea,
+  .airplane {
+    display: none;
+  }
+  .call-card {
+    position: relative;
+    transform: none;
+    align-self: start;
+  }
+  .call-btn {
+    transform: none;
+  }
+  .required {
+    margin-right: 80px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1512,10 +1561,6 @@ button {
   .workflow-6 svg {
     bottom: 50%;
     right: -30%;
-  }
-  .idea,
-  .airplane {
-    display: none;
   }
 }
 
@@ -1580,6 +1625,13 @@ button {
   }
   .member span {
     font-size: 1.25rem;
+  }
+  .subheader svg {
+    bottom: 20px;
+  }
+  .hero-svg {
+    bottom: -60%;
+    right: 13%;
   }
 }
 
@@ -1646,19 +1698,12 @@ button {
     gap: 52px;
     align-items: flex-start;
   }
-  .call-card {
-    position: relative;
-    transform: none;
-    align-self: start;
-  }
-  .call-btn {
-    transform: none;
-  }
   .clients-wrapper {
     left: 10%;
   }
   .technology-logos {
     margin: 48px 0;
+    height: 503px;
   }
   .workflow-box {
     margin-top: 96px;
@@ -1699,7 +1744,7 @@ button {
   }
   h3 {
     font-size: 2.5rem;
-    margin: 50px 24px;
+    margin: 36px 24px;
   }
   .clients-header span {
     font-size: 1.5rem;
@@ -1735,6 +1780,10 @@ button {
   .socials {
     flex-direction: column-reverse;
     gap: 8px;
+  }
+  .hero-svg {
+    bottom: -72%;
+    transform: scale(0.75);
   }
 }
 
@@ -1865,10 +1914,10 @@ button {
     flex-wrap: wrap;
   }
   header {
-    padding: 48px 22px 0;
+    padding: 36px 22px 0;
   }
   .logo {
-    top: 48px;
+    top: 36px;
     padding-left: 22px;
   }
   .menu {
@@ -1879,6 +1928,9 @@ button {
   }
   .burger {
     display: flex;
+  }
+  .technology-logos {
+    height: 215px;
   }
 }
 
@@ -1993,15 +2045,17 @@ button {
     padding: 32px 24px;
     gap: 32px;
     left: 25%;
-    bottom: -15%;
+  }
+  .contact-wrapper {
+    gap: 24px;
   }
   .contact-items {
-    flex-direction: column-reverse;
     align-items: center;
+    gap: 0;
   }
   .message-card form {
     width: 327px;
-    height: 450px;
+    height: 480px;
     gap: 12px;
   }
   .form-top {
@@ -2026,7 +2080,12 @@ button {
     padding: 16px;
     font-size: 1rem;
   }
-  .message-card span {
+  .form-info {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .required,
+  .user-message {
     font-size: 0.75rem;
     margin-right: 0;
   }
@@ -2038,6 +2097,7 @@ button {
     padding: 24px 16px;
     text-align: center;
     align-self: center;
+    margin-bottom: 64px;
   }
   .call-card span {
     font-size: 1.25rem;
@@ -2052,7 +2112,7 @@ button {
     bottom: -115%;
   }
   .email {
-    font-size: 2rem;
+    font-size: 2.3rem;
     line-height: 2.5rem;
     letter-spacing: -1.6px;
   }
