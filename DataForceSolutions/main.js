@@ -1,3 +1,7 @@
+import Lenis from "lenis";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const sidebar = document.querySelector(".sidebar");
@@ -21,6 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
+      console.dir(target);
       lenis.scrollTo(target);
     }
   });
