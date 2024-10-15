@@ -22,8 +22,8 @@ form.addEventListener("submit", (event) => {
         showMessageTemporarily();
         throw new Error("something went wrong");
       }
-      message.innerHTML = "thanks for your message!";
-      message.style.color = "#A1FF95";
+      message.innerHTML = "successfully sent!";
+      message.style.color = "#1c2b40";
       form.reset();
       showMessageTemporarily();
       console.log(res.json());
@@ -34,5 +34,5 @@ form.addEventListener("submit", (event) => {
 function showMessageTemporarily() {
   setTimeout(() => {
     message.innerHTML = "";
-  }, 5000);
+  }, 10000);
 }
