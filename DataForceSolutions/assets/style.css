@@ -1,3 +1,5 @@
+@import "normalize.css";
+
 *,
 *::before,
 *::after {
@@ -52,6 +54,7 @@ h2 {
   font-weight: 600;
   line-height: 10rem;
   letter-spacing: -1.7px;
+  margin: 0;
 }
 
 h4 {
