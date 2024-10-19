@@ -2168,7 +2168,7 @@ button {
     margin-top: 42px;
   }
   .clients-wrapper {
-    left: 7%;
+    left: 11%;
   }
   .clients {
     gap: 24px;
@@ -2198,6 +2198,10 @@ button {
 }
 
 @media screen and (max-width: 400px) {
+  .clients-wrapper {
+    left: 7%;
+  }
+
   .gradient-bg .g1 {
     width: var(--circle-size-small);
     height: var(--circle-size-small);
