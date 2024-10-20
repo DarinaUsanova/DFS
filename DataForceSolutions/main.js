@@ -82,24 +82,35 @@ document.addEventListener("DOMContentLoaded", () => {
   let curY = 0;
   let tgX = 0;
   let tgY = 0;
+  let isMoving = false;
 
   function move() {
-    curX += (tgX - curX) / 10;
-    curY += (tgY - curY) / 10;
-    interBubble.style.transform = `translate(${Math.round(
-      curX
-    )}px, ${Math.round(curY)}px)`;
-    requestAnimationFrame(() => {
-      move();
-    });
+    const diffX = tgX - curX;
+    const diffY = tgY - curY;
+
+    if (Math.abs(diffX) > 0.1 || Math.abs(diffY) > 0.1) {
+      curX += diffX / 10;
+      curY += diffY / 10;
+      interBubble.style.transform = `translate(${Math.round(
+        curX
+      )}px, ${Math.round(curY)}px)`;
+      isMoving = true;
+    } else {
+      isMoving = false;
+    }
+
+    if (isMoving) {
+      requestAnimationFrame(move);
+    }
   }
 
   window.addEventListener("mousemove", (event) => {
     tgX = event.clientX;
     tgY = event.clientY;
+    if (!isMoving) {
+      move();
+    }
   });
-
-  move();
 });
 
 // worflow animation
