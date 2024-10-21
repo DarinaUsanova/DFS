@@ -2161,6 +2161,9 @@ button {
   .contact-items {
     gap: 64px;
   }
+  .about-content h3 {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
