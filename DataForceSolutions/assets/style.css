@@ -56,9 +56,9 @@ h2 {
   font-family: var(--primary-font);
   font-weight: 600;
   margin: 0;
-  font-size: 10rem;
+  font-size: 9.5rem;
   letter-spacing: -1.5px;
-  line-height: 9rem;
+  line-height: 8.5rem;
 }
 
 h4 {
@@ -1852,6 +1852,9 @@ button {
   .decoration-1 {
     display: none;
   }
+  .members-content {
+    margin-top: 24px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1912,6 +1915,14 @@ button {
   }
   .burger {
     display: flex;
+  }
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .card-img img {
+    width: 240px;
+    height: 240px;
   }
 }
 
