@@ -88,31 +88,33 @@
         <p>We are not using cookies!</p>
         <button class="btn cookies-btn" id="cookies-btn-close">great</button>
       </div>
-      <div class="gradient-bg">
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <filter id="goo">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="5"
-                result="blur"
-              />
-              <feColorMatrix
-                in="blur"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                result="goo"
-              />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-        <div class="gradients-container">
-          <div class="g1"></div>
-          <div class="g2"></div>
-          <div class="g3"></div>
-          <div class="g4"></div>
-          <div class="g5"></div>
-          <div class="interactive"></div>
+      <div class="bg-wrapper">
+        <div class="gradient-bg">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="2"
+                  result="blur"
+                />
+                <feColorMatrix
+                  in="blur"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                  result="goo"
+                />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg> -->
+          <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+          </div>
         </div>
       </div>
       <header>
@@ -150,14 +152,14 @@
           <a href="#contact-section" class="btn">contact us</a>
           <svg
             class="hero-svg"
-            width="228"
-            height="421"
-            viewBox="0 0 228 421"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            width="118"
+            height="341"
+            viewBox="0 0 118 341"
+            fill="none"
           >
             <path
-              d="M164.5 5.5C195.721 34 208.846 62 217.996 104.934C247.153 241.748 133.997 346.454 28.9689 401.41C24.0851 403.966 18.7706 406.479 13.761 408.784C-7.50522 418.569 47.2346 321.559 16.6797 382.669C15.3971 385.234 2.19256 410.411 5.54266 412.086C15.761 417.196 51.7344 415.023 62.7344 414.523"
+              d="M49 5C140 93 133.997 266.954 28.9689 321.91C24.0851 324.466 18.7706 326.979 13.761 329.284C-7.50522 339.069 47.2346 242.06 16.6797 303.169C15.3971 305.735 2.19256 330.912 5.54266 332.587C15.761 337.696 51.7344 335.524 62.7344 335.024"
               stroke="#1C2B40"
               stroke-width="10"
               stroke-linecap="round"
@@ -189,7 +191,7 @@
             </article>
             <article class="card" id="card2">
               <div class="card-content">
-                <h4>Data Science and Machine Learning</h4>
+                <h4>Data Science and<br />Machine Learning</h4>
                 <p class="card-text">
                   We develop tailored machine learning (ML) solutions to unlock
                   predictive insights and automate decision-making processes.
@@ -209,14 +211,14 @@
               <div class="card-content">
                 <svg
                   class="decoration-3"
-                  width="622"
-                  height="117"
-                  viewBox="0 0 622 117"
-                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  width="536"
+                  height="101"
+                  viewBox="0 0 536 101"
+                  fill="none"
                 >
                   <path
-                    d="M321.934 5.90677C241.193 8.59542 129.053 -9.50376 52.8857 21.0448C8.67972 38.7746 16.0812 82.2602 57.3016 95.2372C118.424 114.48 190.949 105.62 253.739 100.459C316.156 95.3279 377.621 99.4686 440.024 102.159C483.887 104.049 537.174 102.719 577.871 87.4254C588.668 83.3684 604.639 76.5977 606.279 64.6779C611.953 23.4291 531.877 24.2697 503.303 22.9067C363.336 16.2304 222.136 18.3489 81.8847 15.6615C51.4327 15.078 7.99015 19.5181 3.44637 53.8303C-5.8578 124.091 132.848 114.524 180.763 112.318C261.86 108.585 343.011 106.674 424.182 109.201C478.608 110.896 546.304 118.47 592.731 87.4254C620.326 68.9728 634.479 45.6232 592.731 21.0448"
+                    d="M277.408 5.50095C207.939 7.81424 111.455 -7.7581 45.9211 18.5255C7.88677 33.7801 14.2549 71.1947 49.7205 82.36C102.31 98.9162 164.709 91.2932 218.733 86.8524C272.436 82.438 325.32 86.0005 379.011 88.315C416.75 89.9419 462.597 88.797 497.613 75.6387C506.902 72.1481 520.644 66.3227 522.055 56.067C526.936 20.577 458.041 21.3002 433.455 20.1275C313.029 14.3833 191.542 16.2061 70.8715 13.8938C44.671 13.3918 7.29347 17.212 3.38405 46.7339C-4.62116 107.185 114.72 98.9541 155.946 97.0561C225.72 93.8439 295.542 92.2005 365.38 94.3746C412.208 95.8324 470.453 102.349 510.398 75.6387C534.141 59.7623 546.318 39.6725 510.398 18.5255"
                     stroke="#1C2B40"
                     stroke-width="5"
                     stroke-linecap="round"
@@ -1082,7 +1084,7 @@
           <div class="section-header" id="contact-section">
             <h2>get in touch</h2>
             <p class="section-text">
-              Do you have a question, an idea, or a project you need help with?
+              Do you have a question, an idea, or a project you need</br>help with?
               Contact us!
             </p>
           </div>
@@ -1134,14 +1136,14 @@
               <div class="call-card-inner">
                 <span>You can also book<br />a call with us</span>
                 <svg
-                  width="66"
-                  height="64"
-                  viewBox="0 0 66 64"
-                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  width="56"
+                  height="43"
+                  viewBox="0 0 56 43"
+                  fill="none"
                 >
                   <path
-                    d="M3 3C36.6055 8.53662 51.1055 34.0366 57.0138 58.6506M57.6049 60.5364C59.6097 54.5624 60.5579 50.0256 62.5628 44.0515M57.2735 60.2305L44.1022 52.141"
+                    d="M3 3.94482C33.8807 -0.0358869 42.7374 21.3913 50.0282 39.4894M50.0282 39.4894C50.505 40.6728 51.7384 31.3758 52.8074 26.6174M50.0282 39.4894L38.3631 34.7362"
                     stroke="white"
                     stroke-width="5"
                     stroke-linecap="round"

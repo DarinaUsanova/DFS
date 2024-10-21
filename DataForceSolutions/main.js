@@ -1,4 +1,4 @@
-import Lenis from "lenis";
+// import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -11,25 +11,25 @@ const navLinks = document.querySelectorAll(".menu-mobile .is-active a");
 const overlayer = document.querySelector("figure");
 
 //lenis
-const lenis = new Lenis();
-lenis.on("scroll", ScrollTrigger.update);
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000);
-});
-gsap.ticker.lagSmoothing(0);
+// const lenis = new Lenis();
+// lenis.on("scroll", ScrollTrigger.update);
+// gsap.ticker.add((time) => {
+//   lenis.raf(time * 1000);
+// });
+// gsap.ticker.lagSmoothing(0);
 
-// section scroll
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+// // section scroll
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      console.dir(target);
-      lenis.scrollTo(target);
-    }
-  });
-});
+//     const target = document.querySelector(this.getAttribute("href"));
+//     if (target) {
+//       console.dir(target);
+//       lenis.scrollTo(target);
+//     }
+//   });
+// });
 
 //burger menu
 
@@ -76,42 +76,42 @@ function handleCloseOnClickOutside(event) {
 setupCloseEvents();
 
 // blobs animation
-document.addEventListener("DOMContentLoaded", () => {
-  const interBubble = document.querySelector(".interactive");
-  let curX = 0;
-  let curY = 0;
-  let tgX = 0;
-  let tgY = 0;
-  let isMoving = false;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const interBubble = document.querySelector(".interactive");
+//   let curX = 0;
+//   let curY = 0;
+//   let tgX = 0;
+//   let tgY = 0;
+//   let isMoving = false;
 
-  function move() {
-    const diffX = tgX - curX;
-    const diffY = tgY - curY;
+//   function move() {
+//     const diffX = tgX - curX;
+//     const diffY = tgY - curY;
 
-    if (Math.abs(diffX) > 0.1 || Math.abs(diffY) > 0.1) {
-      curX += diffX / 10;
-      curY += diffY / 10;
-      interBubble.style.transform = `translate(${Math.round(
-        curX
-      )}px, ${Math.round(curY)}px)`;
-      isMoving = true;
-    } else {
-      isMoving = false;
-    }
+//     if (Math.abs(diffX) > 0.1 || Math.abs(diffY) > 0.1) {
+//       curX += diffX / 10;
+//       curY += diffY / 10;
+//       interBubble.style.transform = `translate(${Math.round(
+//         curX
+//       )}px, ${Math.round(curY)}px)`;
+//       isMoving = true;
+//     } else {
+//       isMoving = false;
+//     }
 
-    if (isMoving) {
-      requestAnimationFrame(move);
-    }
-  }
+//     if (isMoving) {
+//       requestAnimationFrame(move);
+//     }
+//   }
 
-  window.addEventListener("mousemove", (event) => {
-    tgX = event.clientX;
-    tgY = event.clientY;
-    if (!isMoving) {
-      move();
-    }
-  });
-});
+//   window.addEventListener("mousemove", (event) => {
+//     tgX = event.clientX;
+//     tgY = event.clientY;
+//     if (!isMoving) {
+//       move();
+//     }
+//   });
+// });
 
 // worflow animation
 let path = document.querySelector(".workflow-box svg path");
@@ -137,15 +137,26 @@ gsap.to(path, {
 
 // borders for bg-animation
 gsap.to(".gradient-bg", {
-  opacity: 0,
-  duration: 0.5,
+  opacity: 1,
   scrollTrigger: {
     trigger: "#about-us-section",
     start: "top top",
     end: "top 80%",
-    // markers: true,
-    onEnter: () => gsap.to(".gradient-bg", { opacity: 0 }),
-    onLeaveBack: () => gsap.to(".gradient-bg", { opacity: 1 }),
+    markers: false,
+    onEnter: () => {
+      gsap.to(".gradient-bg", {
+        opacity: 0,
+        duration: 0.5,
+        onComplete: () => gsap.set(".bg-wrapper", { display: "none" }),
+      });
+    },
+    onLeaveBack: () => {
+      gsap.set(".bg-wrapper", { display: "block" });
+      gsap.to(".gradient-bg", {
+        opacity: 1,
+        duration: 0.5,
+      });
+    },
   },
 });
 

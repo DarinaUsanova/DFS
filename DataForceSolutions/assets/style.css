@@ -46,33 +46,37 @@
   --quantity-mob2: 9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2 {
   color: var(--text-dark);
   font-family: var(--primary-font);
-  font-size: 10.5rem;
   font-weight: 600;
-  line-height: 10rem;
-  letter-spacing: -1.7px;
   margin: 0;
+  font-size: 10rem;
+  letter-spacing: -1.5px;
+  line-height: 9rem;
 }
 
 h4 {
   font-family: var(--primary-font);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h3 {
   font-family: var(--primary-font);
-  font-size: 3rem;
   font-weight: 600;
-  margin: 74px 0 32px;
+  font-size: 2.5em;
+  margin: 36px 0 20px;
 }
 
 .clients-header span {
   font-family: var(--secondary-font);
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 2.5rem;
   text-align: center;
@@ -80,7 +84,7 @@ h3 {
 
 .page-wrapper {
   position: relative;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -269,7 +273,7 @@ header {
 }
 
 .hero {
-  padding: 36px 0 129px;
+  padding: 52px 0 108px;
 }
 
 .hero-wrapper {
@@ -279,25 +283,26 @@ header {
   color: var(--text-dark);
   text-align: center;
   position: relative;
+  gap: 12px;
 }
 
 .hero-svg {
   position: absolute;
-  bottom: -56%;
-  right: 25%;
+  bottom: -55%;
+  right: 20%;
 }
 
 .hero-text {
   font-family: var(--secondary-font);
-  font-size: 1.75rem;
   font-weight: 400;
   line-height: 2.5rem;
-  margin-bottom: 74px;
-  max-width: 1154px;
+  max-width: 1080px;
+  font-size: 1.5rem;
+  margin-bottom: 44px;
 }
 
 .accent {
-  font-size: 2rem;
+  font-size: 1.55rem;
   font-weight: 700;
 }
 
@@ -332,7 +337,7 @@ header {
 }
 
 .services {
-  padding: 142px 0 156px;
+  padding: 108px 0;
 }
 
 .services-wrapper h2 {
@@ -351,18 +356,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1360px;
+  max-width: 1170px;
   color: var(--text-dark);
-  padding: 64px;
+  padding: 52px;
   background: url(/images/card-bg.svg) no-repeat center;
   position: sticky;
   top: 100px;
+  gap: 100px;
 }
 
 .decoration-3 {
   position: absolute;
   top: -20px;
-  left: -40px;
+  left: -30px;
 }
 
 .card-content {
@@ -376,9 +382,9 @@ header {
 
 .card-text {
   font-family: var(--secondary-font);
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 2.4rem;
+  line-height: 2rem;
   opacity: 0.8;
 }
 
@@ -393,8 +399,8 @@ header {
 }
 
 .card-img img {
-  width: 434px;
-  height: 429px;
+  width: 369px;
+  height: 374px;
 }
 
 .deco {
@@ -409,13 +415,13 @@ header {
 
 .decoration-2 {
   position: absolute;
-  bottom: -45px;
-  left: -65px;
+  bottom: -35px;
+  left: -60px;
 }
 
 .about-wrapper {
   position: relative;
-  padding: 128px 80px;
+  padding: 108px 80px;
   background-color: var(--main-blue);
   color: var(--text-light);
   border-radius: 32px;
@@ -435,7 +441,7 @@ header {
 .section-header {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 54px;
 }
 
 .about-wrapper h2 {
@@ -444,10 +450,10 @@ header {
 
 .section-text {
   font-family: var(--secondary-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2.5rem;
-  max-width: 1124px;
+  line-height: 2rem;
+  max-width: 900px;
 }
 
 .subheader {
@@ -457,14 +463,14 @@ header {
 .subheader svg {
   position: absolute;
   left: 50px;
-  bottom: 10px;
+  bottom: -5px;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 120px;
+  margin-top: 56px;
 }
 
 .text-box {
@@ -474,29 +480,29 @@ header {
 }
 .about-content-text {
   font-family: var(--secondary-font);
-  font-size: 2rem;
   font-weight: 400;
-  line-height: 2.5rem;
-  padding-bottom: 40px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 24px;
 }
 
 .short {
-  max-width: 787px;
+  max-width: 600px;
 }
 
 .middle {
-  max-width: 946px;
+  max-width: 700px;
 }
 
 .long {
-  max-width: 1065px;
+  max-width: 800px;
 }
 
 .members-content {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 120px;
+  margin-top: 56px;
 }
 
 .members-img {
@@ -514,8 +520,8 @@ header {
 }
 
 .member img {
-  width: 350px;
-  height: 335px;
+  width: 300px;
+  height: 285px;
   border-radius: 40px;
   object-fit: cover;
 }
@@ -523,16 +529,16 @@ header {
 .member span {
   text-align: center;
   font-family: var(--primary-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
 .workflow-wrapper {
-  padding: 148px 80px;
+  padding: 108px 80px;
 }
 
 .workflow-box {
-  margin-top: 152px;
+  margin-top: 124px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -575,15 +581,15 @@ header {
 .item-box span {
   color: var(--text-light);
   font-family: var(--secondary-font);
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 400;
-  line-height: 3.5rem;
+  line-height: 3rem;
 }
 
 .workflow-1 {
   position: absolute;
   top: -9%;
-  left: 7%;
+  left: 0%;
   display: flex;
   flex-direction: column;
 }
@@ -609,7 +615,7 @@ header {
 .workflow-3 {
   position: absolute;
   top: 30%;
-  right: 5%;
+  right: -2%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -659,8 +665,8 @@ header {
 
 .workflow-6 {
   position: absolute;
-  bottom: 3%;
-  right: 11%;
+  bottom: 4ch;
+  right: 2%;
 }
 
 .sixth-box {
@@ -686,7 +692,7 @@ header {
 
 .technology-wrapper {
   position: relative;
-  padding: 128px 80px;
+  padding: 108px 80px;
   background-color: var(--main-blue);
   color: var(--text-light);
   border-radius: 32px;
@@ -712,14 +718,14 @@ header {
 }
 
 .technology-logos {
-  margin: 96px 0;
+  margin: 86px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   border-top: 2px solid var(--white);
   border-bottom: 2px solid var(--white);
-  height: 599px;
+  height: 575px;
 }
 
 .mobile-logos {
@@ -729,28 +735,28 @@ header {
 .first-row {
   display: flex;
   justify-content: center;
-  gap: 88px;
+  gap: 48px;
   padding: 40px 0 24px;
 }
 
 .second-row {
   display: flex;
   justify-content: center;
-  gap: 66px;
+  gap: 36px;
   padding: 24px;
 }
 
 .third-row {
   display: flex;
   justify-content: center;
-  gap: 76px;
+  gap: 40px;
   padding: 24px;
 }
 
 .fourth-row {
   display: flex;
   justify-content: center;
-  gap: 76px;
+  gap: 40px;
   padding: 24px 0 40px;
 }
 
@@ -758,15 +764,16 @@ header {
   position: absolute;
   z-index: 1;
   bottom: -12%;
+  left: 8%;
   background-color: var(--white);
   color: var(--text-dark);
-  width: 1280px;
-  padding: 48px;
+  width: 1000px;
+  padding: 40px;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 106px;
+  gap: 86px;
   box-shadow: 343px 293px 126px 0px rgba(28, 42, 62, 0),
     220px 188px 116px 0px rgba(28, 42, 62, 0.01),
     123px 106px 97px 0px rgba(28, 42, 62, 0.03),
@@ -825,12 +832,12 @@ header {
 .message-card form {
   position: relative;
   /* margin-top: 76px; */
-  padding: 40px;
-  width: 879px;
-  height: 479px;
+  padding: 32px;
+  width: 760px;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
   background: url(/images/form.svg) no-repeat center;
 }
 
@@ -843,7 +850,7 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   padding: 0;
 }
 
@@ -863,7 +870,7 @@ button {
 
 .message-card input {
   height: 60px;
-  width: 362px;
+  width: 302px;
   padding: 16px 24px;
   align-items: center;
   border-radius: 32px;
@@ -884,8 +891,8 @@ button {
 }
 
 .message-card textarea {
-  height: 192px;
-  width: 799px;
+  height: 152px;
+  width: 690px;
   padding: 16px 24px;
   border-radius: 32px;
   border: 4px solid rgba(236, 233, 242, 0.3);
@@ -920,6 +927,7 @@ button {
   font-size: 1.25rem;
   line-height: 1.25rem;
   z-index: 2;
+  width: 220px;
 }
 
 .form-info {
@@ -941,11 +949,11 @@ button {
 }
 
 .call-card {
-  width: 574px;
+  width: 404px;
   position: absolute;
-  bottom: -70px;
-  right: 0;
-  padding: 32px 55px;
+  bottom: -30px;
+  right: 30px;
+  padding: 32px 28px;
   border-radius: 40px;
   outline: 1px solid rgba(251, 251, 252, 0.3);
   background-color: var(--main-blue);
@@ -958,9 +966,9 @@ button {
 
 .call-card span {
   font-family: var(--secondary-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 .call-card-inner {
@@ -975,12 +983,13 @@ button {
   color: var(--main-blue);
   font-size: 1.25rem;
   line-height: 1.25rem;
+  width: 220px;
 }
 
 .call-card-inner svg {
   position: absolute;
-  top: 15px;
-  right: 55px;
+  top: 5px;
+  right: 20px;
 }
 
 .decoration-box {
@@ -991,8 +1000,8 @@ button {
 }
 
 .airplane {
-  top: 23%;
-  right: 20%;
+  top: 8%;
+  right: 15%;
   width: 150px;
   height: 200px;
   transform: rotate(18deg);
@@ -1009,8 +1018,8 @@ button {
 }
 
 .idea {
-  top: 40%;
-  right: 9%;
+  top: 33%;
+  right: 4%;
   width: 160px;
   height: 160px;
   transform: rotate(-5deg);
@@ -1027,12 +1036,12 @@ button {
 
 .footer-wrapper {
   position: relative;
-  padding: 56px 10px 36px;
+  padding: 52px 10px 36px;
   background-color: var(--main-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 40px;
   border-radius: 32px 32px 0 0;
 }
 
@@ -1102,9 +1111,9 @@ button {
 .email {
   color: var(--text-light);
   font-family: var(--primary-font);
-  font-size: 8.8rem;
+  font-size: 7.6rem;
   font-weight: 600;
-  line-height: 11.25rem;
+  line-height: 9rem;
   letter-spacing: -6.4px;
   background: linear-gradient(
     83deg,
@@ -1114,7 +1123,7 @@ button {
   );
   background-clip: text;
   -webkit-background-clip: text;
-  transition: color 0.1s ease;
+  transition: color 0.3s ease;
   padding-right: 3px;
 }
 
@@ -1183,7 +1192,6 @@ button {
   left: 0;
   z-index: -1;
   transition: opacity 0.3s ease;
-  opacity: 1;
 }
 
 .gradient-bg::before {
@@ -1211,7 +1219,7 @@ button {
 }
 
 .gradient-bg .gradients-container {
-  filter: url(#goo) blur(25px);
+  filter: url(#goo) blur(15px);
   width: 100%;
   height: 100%;
 }
@@ -1334,9 +1342,9 @@ button {
   .workflow-6 {
     right: 9%;
   }
-  .clients-wrapper {
+  /* .clients-wrapper {
     left: 4%;
-  }
+  } */
   .email {
     font-size: 8rem;
   }
@@ -1352,18 +1360,15 @@ button {
 }
 
 @media screen and (max-width: 1370px) {
-  .clients-wrapper {
+  /* .clients-wrapper {
     left: 2%;
-  }
+  } */
   .card {
     width: 100%;
     border-radius: 40px;
   }
   .workflow-6 {
     right: 7%;
-  }
-  .hero-svg {
-    right: 15%;
   }
   .airplane {
     right: 11%;
@@ -1377,47 +1382,18 @@ button {
 }
 
 @media screen and (max-width: 1320px) {
-  .clients-wrapper {
+  /* .clients-wrapper {
     width: 1200px;
     left: 4%;
-  }
+  } */
   .required {
     margin-right: 240px;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  h1,
-  h2 {
-    font-size: 10rem;
-    letter-spacing: -1.5px;
-    line-height: 9.5rem;
-  }
-  h3 {
-    font-size: 2.5em;
-    margin: 40px 0 24px;
-  }
   .hero-text {
-    font-size: 1.5rem;
     margin-bottom: 32px;
-  }
-  .section-text {
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-  .about-content-text {
-    font-size: 1.75rem;
-    line-height: 2rem;
-    padding-bottom: 32px;
-  }
-  .about-content {
-    margin-top: 96px;
-  }
-  .subheader svg {
-    bottom: 0;
-  }
-  .members-content {
-    margin-top: 96px;
   }
   .workflow-3 {
     right: -1%;
