@@ -2155,6 +2155,12 @@ button {
   .logos {
     gap: 80px;
   }
+  .contact-wrapper {
+    padding-bottom: 36px;
+  }
+  .contact-items {
+    gap: 64px;
+  }
 }
 
 @media screen and (max-width: 400px) {
