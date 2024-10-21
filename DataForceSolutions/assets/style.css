@@ -56,9 +56,9 @@ h2 {
   font-family: var(--primary-font);
   font-weight: 600;
   margin: 0;
-  font-size: 9.5rem;
+  font-size: 9rem;
   letter-spacing: -1.5px;
-  line-height: 8.5rem;
+  line-height: 8rem;
 }
 
 h4 {
@@ -273,7 +273,7 @@ header {
 }
 
 .hero {
-  padding: 52px 0 108px;
+  padding: 44px 0 108px;
 }
 
 .hero-wrapper {
