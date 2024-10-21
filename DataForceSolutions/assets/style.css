@@ -1219,7 +1219,7 @@ button {
 }
 
 .gradient-bg .gradients-container {
-  filter: url(#goo) blur(15px);
+  /* filter: url(#goo) blur(15px); */
   width: 100%;
   height: 100%;
 }
