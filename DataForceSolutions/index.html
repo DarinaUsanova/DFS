@@ -19,6 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/bg.css" />
+    <link rel="stylesheet" href="/arrow.css" />
     <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
     <link
       rel="icon"
@@ -90,7 +92,7 @@
       </div>
       <div class="bg-wrapper">
         <div class="gradient-bg">
-          <!-- <svg xmlns="http://www.w3.org/2000/svg">
+          <svg xmlns="http://www.w3.org/2000/svg">
             <defs>
               <filter id="goo">
                 <feGaussianBlur
@@ -106,14 +108,15 @@
                 <feBlend in="SourceGraphic" in2="goo" />
               </filter>
             </defs>
-          </svg> -->
+          </svg>
           <div class="gradients-container">
-            <div class="g1"></div>
+            <canvas id="cnvs"></canvas>
+            <!-- <div class="g1"></div>
             <div class="g2"></div>
             <div class="g3"></div>
             <div class="g4"></div>
             <div class="g5"></div>
-            <div class="interactive"></div>
+            <div class="interactive"></div> -->
           </div>
         </div>
       </div>
@@ -140,182 +143,184 @@
       <div class="logo">
         <a href="/index.html"><img src="/images/Logo.svg" alt="logo" /></a>
       </div>
-      <section class="hero">
-        <div class="hero-wrapper">
-          <h1>engineering<br />your success</h1>
-          <h3>from idea to solution</h3>
-          <p class="hero-text">
-            <span class="hero-text accent">DataForce Solutions </span>empowers
-            businesses with state-of-the-art Data Science and AI technologies to
-            gain valuable insights and&nbsp;drive&nbsp;innovation.
-          </p>
-          <a href="#contact-section" class="btn">contact us</a>
-          <svg
-            class="hero-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="118"
-            height="341"
-            viewBox="0 0 118 341"
-            fill="none"
-          >
-            <path
-              d="M49 5C140 93 133.997 266.954 28.9689 321.91C24.0851 324.466 18.7706 326.979 13.761 329.284C-7.50522 339.069 47.2346 242.06 16.6797 303.169C15.3971 305.735 2.19256 330.912 5.54266 332.587C15.761 337.696 51.7344 335.524 62.7344 335.024"
-              stroke="#1C2B40"
-              stroke-width="10"
-              stroke-linecap="round"
-            />
-          </svg>
-        </div>
-      </section>
-      <section class="services" id="services-section">
-        <div class="services-wrapper">
-          <h2>services</h2>
-          <div class="cards">
-            <article class="card" id="card1">
-              <div class="card-content">
-                <h4>Artificial Intelligence</h4>
-                <p class="card-text">
-                  We focus on creating customized AI strategies that align with
-                  your business model and goals, helping you maintain a
-                  competitive advantage.<br> We design secure and scalable AI
-                  solutions that smoothly integrate into the core of your
-                  company, enhancing every aspect of your operations.
-                </p>
-              </div>
-              <div class="card-img">
-                <img
-                  src="/images/card-img-1.png"
-                  alt="white and blue abstract shapes"
-                />
-              </div>
-            </article>
-            <article class="card" id="card2">
-              <div class="card-content">
-                <h4>Data Science and<br />Machine Learning</h4>
-                <p class="card-text">
-                  We develop tailored machine learning (ML) solutions to unlock
-                  predictive insights and automate decision-making processes.
-                  Our approach focuses on understanding your unique challenges
-                  and opportunities, enabling us to deliver highly
-                  customized,effective ML models.
-                </p>
-              </div>
-              <div class="card-img">
-                <img
-                  src="/images/card-img-2.png"
-                  alt="purple and blue abstract shapes"
-                />
-              </div>
-            </article>
-            <article class="card" id="card3">
-              <div class="card-content">
-                <svg
-                  class="decoration-3"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="536"
-                  height="101"
-                  viewBox="0 0 536 101"
-                  fill="none"
-                >
-                  <path
-                    d="M277.408 5.50095C207.939 7.81424 111.455 -7.7581 45.9211 18.5255C7.88677 33.7801 14.2549 71.1947 49.7205 82.36C102.31 98.9162 164.709 91.2932 218.733 86.8524C272.436 82.438 325.32 86.0005 379.011 88.315C416.75 89.9419 462.597 88.797 497.613 75.6387C506.902 72.1481 520.644 66.3227 522.055 56.067C526.936 20.577 458.041 21.3002 433.455 20.1275C313.029 14.3833 191.542 16.2061 70.8715 13.8938C44.671 13.3918 7.29347 17.212 3.38405 46.7339C-4.62116 107.185 114.72 98.9541 155.946 97.0561C225.72 93.8439 295.542 92.2005 365.38 94.3746C412.208 95.8324 470.453 102.349 510.398 75.6387C534.141 59.7623 546.318 39.6725 510.398 18.5255"
-                    stroke="#1C2B40"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <h4>Business Intelligence</h4>
-                <p class="card-text">
-                  Business Intelligence powers decisions by transforming complex
-                  data into actionable insights and providing real-time access
-                  to reports, metrics, and KPIs. Our services span advanced data
-                  analysis and visualization to equip your company for
-                  data-driven success.
-                </p>
-              </div>
-              <div class="card-img deco">
-                <svg
-                  class="decoration-1"
-                  width="49"
-                  height="32"
-                  viewBox="0 0 49 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M42.8442 25.0465L12.5 4.5"
-                    stroke="#1C2B40"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M36.9019 28.569C25.6181 27.6108 14.3477 26.6171 3 25.9233"
-                    stroke="#1C2B40"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M46.3652 19.2696C44.4627 13.5573 41.6824 8.42055 39.0968 3"
-                    stroke="#1C2B40"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <svg
-                  class="decoration-2"
-                  width="77"
-                  height="73"
-                  viewBox="0 0 77 73"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M49.1859 11.4103L21.5277 3"
-                    stroke="#1C2B40"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M53.2547 29.5952L3 61.4606"
-                    stroke="#1C2B40"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M73.5787 36.8283L62.6864 69.8392"
-                    stroke="#1C2B40"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <img
-                  src="/images/card-img-3.png"
-                  alt="purple, light blue and blue abstract shapes"
-                />
-              </div>
-            </article>
-            <article class="card" id="card4">
-              <div class="card-content">
-                <h4>Engineering Services</h4>
-                <p class="card-text">
-                  Our Engineering Services streamline the entire product
-                  lifecycle, from ideation to release, emphasizing quality,
-                  adaptability, and speed.<br> We integrate the latest technologies
-                  with proven agile methodologies, ensuring seamless
-                  collaboration across development, testing, and deployment
-                  stages.
-                </p>
-              </div>
-              <div class="card-img">
-                <img
-                  src="/images/card-img-4.png"
-                  alt="purple and light blue abstract shapes"
-                />
-              </div>
-            </article>
+      <div class="bg-visibility-wrapper">
+        <section class="hero">
+          <div class="hero-wrapper">
+            <h1>engineering<br />your success</h1>
+            <h3>from idea to solution</h3>
+            <p class="hero-text">
+              <span class="hero-text accent">DataForce Solutions </span>empowers
+              businesses with state-of-the-art Data Science and AI technologies to
+              gain valuable insights and&nbsp;drive&nbsp;innovation.
+            </p>
+            <a href="#contact-section" class="btn">contact us</a>
+            <svg
+              class="hero-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="118"
+              height="341"
+              viewBox="0 0 118 341"
+              fill="none"
+            >
+              <path
+                d="M49 5C140 93 133.997 266.954 28.9689 321.91C24.0851 324.466 18.7706 326.979 13.761 329.284C-7.50522 339.069 47.2346 242.06 16.6797 303.169C15.3971 305.735 2.19256 330.912 5.54266 332.587C15.761 337.696 51.7344 335.524 62.7344 335.024"
+                stroke="#1C2B40"
+                stroke-width="10"
+                stroke-linecap="round"
+              />
+            </svg>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="services" id="services-section">
+          <div class="services-wrapper">
+            <h2>services</h2>
+            <div class="cards">
+              <article class="card" id="card1">
+                <div class="card-content">
+                  <h4>Artificial Intelligence</h4>
+                  <p class="card-text">
+                    We focus on creating customized AI strategies that align with
+                    your business model and goals, helping you maintain a
+                    competitive advantage.<br> We design secure and scalable AI
+                    solutions that smoothly integrate into the core of your
+                    company, enhancing every aspect of your operations.
+                  </p>
+                </div>
+                <div class="card-img">
+                  <img
+                    src="/images/card-img-1.png"
+                    alt="white and blue abstract shapes"
+                  />
+                </div>
+              </article>
+              <article class="card" id="card2">
+                <div class="card-content">
+                  <h4>Data Science and<br />Machine Learning</h4>
+                  <p class="card-text">
+                    We develop tailored machine learning (ML) solutions to unlock
+                    predictive insights and automate decision-making processes.
+                    Our approach focuses on understanding your unique challenges
+                    and opportunities, enabling us to deliver highly
+                    customized,effective ML models.
+                  </p>
+                </div>
+                <div class="card-img">
+                  <img
+                    src="/images/card-img-2.png"
+                    alt="purple and blue abstract shapes"
+                  />
+                </div>
+              </article>
+              <article class="card" id="card3">
+                <div class="card-content">
+                  <svg
+                    class="decoration-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="536"
+                    height="101"
+                    viewBox="0 0 536 101"
+                    fill="none"
+                  >
+                    <path
+                      d="M277.408 5.50095C207.939 7.81424 111.455 -7.7581 45.9211 18.5255C7.88677 33.7801 14.2549 71.1947 49.7205 82.36C102.31 98.9162 164.709 91.2932 218.733 86.8524C272.436 82.438 325.32 86.0005 379.011 88.315C416.75 89.9419 462.597 88.797 497.613 75.6387C506.902 72.1481 520.644 66.3227 522.055 56.067C526.936 20.577 458.041 21.3002 433.455 20.1275C313.029 14.3833 191.542 16.2061 70.8715 13.8938C44.671 13.3918 7.29347 17.212 3.38405 46.7339C-4.62116 107.185 114.72 98.9541 155.946 97.0561C225.72 93.8439 295.542 92.2005 365.38 94.3746C412.208 95.8324 470.453 102.349 510.398 75.6387C534.141 59.7623 546.318 39.6725 510.398 18.5255"
+                      stroke="#1C2B40"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <h4>Business Intelligence</h4>
+                  <p class="card-text">
+                    Business Intelligence powers decisions by transforming complex
+                    data into actionable insights and providing real-time access
+                    to reports, metrics, and KPIs. Our services span advanced data
+                    analysis and visualization to equip your company for
+                    data-driven success.
+                  </p>
+                </div>
+                <div class="card-img deco">
+                  <svg
+                    class="decoration-1"
+                    width="49"
+                    height="32"
+                    viewBox="0 0 49 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M42.8442 25.0465L12.5 4.5"
+                      stroke="#1C2B40"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M36.9019 28.569C25.6181 27.6108 14.3477 26.6171 3 25.9233"
+                      stroke="#1C2B40"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M46.3652 19.2696C44.4627 13.5573 41.6824 8.42055 39.0968 3"
+                      stroke="#1C2B40"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <svg
+                    class="decoration-2"
+                    width="77"
+                    height="73"
+                    viewBox="0 0 77 73"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M49.1859 11.4103L21.5277 3"
+                      stroke="#1C2B40"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M53.2547 29.5952L3 61.4606"
+                      stroke="#1C2B40"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M73.5787 36.8283L62.6864 69.8392"
+                      stroke="#1C2B40"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <img
+                    src="/images/card-img-3.png"
+                    alt="purple, light blue and blue abstract shapes"
+                  />
+                </div>
+              </article>
+              <article class="card" id="card4">
+                <div class="card-content">
+                  <h4>Engineering Services</h4>
+                  <p class="card-text">
+                    Our Engineering Services streamline the entire product
+                    lifecycle, from ideation to release, emphasizing quality,
+                    adaptability, and speed.<br> We integrate the latest technologies
+                    with proven agile methodologies, ensuring seamless
+                    collaboration across development, testing, and deployment
+                    stages.
+                  </p>
+                </div>
+                <div class="card-img">
+                  <img
+                    src="/images/card-img-4.png"
+                    alt="purple and light blue abstract shapes"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
       <section class="about" id="about-us-section">
         <div class="about-wrapper">
           <svg
@@ -1180,5 +1185,8 @@
     </div>
     <script type="module" src="/main.js"></script>
     <script type="module" src="/form.js"></script>
+    <script type="module" src="/blob.js"></script>
+    <script type="module" src="./arrow-observer.js"></script>
+    <script type="module" src="./bg-observer.js"></script>
   </body>
 </html>

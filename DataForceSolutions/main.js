@@ -113,52 +113,52 @@ setupCloseEvents();
 //   });
 // });
 
-// worflow animation
-let path = document.querySelector(".workflow-box svg path");
-let length = path.getTotalLength();
+//worflow animation
+// let path = document.querySelector(".workflow-box svg path");
+// let length = path.getTotalLength();
 
-path.style.strokeDasharray = length;
-path.style.strokeDashoffset = length;
+// path.style.strokeDasharray = length;
+// path.style.strokeDashoffset = length;
 
-gsap.to(path, {
-  strokeDashoffset: 0,
-  duration: 6,
-  ease: "none",
-  repeat: -1,
-  repeatDelay: 2,
-  yoyo: false,
-  scrollTrigger: {
-    trigger: ".workflow",
-    start: "top top",
-    // markers: true,
-    toggleActions: "play none resume pause",
-  },
-});
+// gsap.to(path, {
+//   strokeDashoffset: 0,
+//   duration: 6,
+//   ease: "none",
+//   repeat: -1,
+//   repeatDelay: 2,
+//   yoyo: false,
+//   scrollTrigger: {
+//     trigger: ".workflow",
+//     start: "top top",
+//     // markers: true,
+//     toggleActions: "play none resume pause",
+//   },
+// });
 
 // borders for bg-animation
-gsap.to(".gradient-bg", {
-  opacity: 1,
-  scrollTrigger: {
-    trigger: "#about-us-section",
-    start: "top top",
-    end: "top 80%",
-    markers: false,
-    onEnter: () => {
-      gsap.to(".gradient-bg", {
-        opacity: 0,
-        duration: 0.5,
-        onComplete: () => gsap.set(".bg-wrapper", { display: "none" }),
-      });
-    },
-    onLeaveBack: () => {
-      gsap.set(".bg-wrapper", { display: "block" });
-      gsap.to(".gradient-bg", {
-        opacity: 1,
-        duration: 0.5,
-      });
-    },
-  },
-});
+// gsap.to(".gradient-bg", {
+//   opacity: 1,
+//   scrollTrigger: {
+//     trigger: "#about-us-section",
+//     start: "top top",
+//     end: "top 80%",
+//     markers: false,
+//     onEnter: () => {
+//       gsap.to(".gradient-bg", {
+//         opacity: 0,
+//         duration: 0.5,
+//         onComplete: () => gsap.set(".bg-wrapper", { display: "none" }),
+//       });
+//     },
+//     onLeaveBack: () => {
+//       gsap.set(".bg-wrapper", { display: "block" });
+//       gsap.to(".gradient-bg", {
+//         opacity: 1,
+//         duration: 0.5,
+//       });
+//     },
+//   },
+// });
 
 //cookies banner
 

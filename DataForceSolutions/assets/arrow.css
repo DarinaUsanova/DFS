@@ -1,0 +1,28 @@
+.main-arrow path {
+  stroke-dashoffset: 3928.8;
+  stroke-dasharray: 3928.8;
+  animation: animate-path 8s linear infinite;
+  will-change: stroke-dashoffset, opacity;
+}
+
+.main-arrow.stop-animation path {
+  animation-play-state: paused;
+}
+
+@keyframes animate-path {
+  0% {
+    stroke-dashoffset: 3928.8;
+    opacity: 1;
+  }
+  75% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
