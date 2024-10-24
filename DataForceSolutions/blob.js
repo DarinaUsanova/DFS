@@ -236,18 +236,18 @@ const colors = [
 const breakpoints = [
   {
     width: 430,
-    sizes: [200, 300, 250, 150, 300, 400],
-    speeds: [0.1, 0.2, 0.5, 1, 0.8, 0.3],
+    sizes: [200, 300, 250, 200, 300, 400],
+    speeds: [0.1, 0.2, 0.5, 0.3, 0.4, 0.3],
   },
   {
     width: 768,
     sizes: [400, 500, 450, 300, 550, 300],
-    speeds: [1, 1.2, 0.7, 1.2, 1.5, 0.7],
+    speeds: [1, 0.7, 0.7, 0.9, 1, 0.7],
   },
   {
     width: 1024,
     sizes: [400, 700, 650, 450, 600, 600],
-    speeds: [1.5, 0.9, 0.4, 1.8, 1.5, 0.3],
+    speeds: [1.2, 0.6, 0.4, 1, 0.8, 0.3],
   },
   {
     width: 1440,
@@ -301,8 +301,8 @@ class Circle {
       this.y + this.size / 2,
       this.size / 2
     );
-    gradient.addColorStop(0, `rgba(${this.color}, .6)`);
-    gradient.addColorStop(1, `rgba(${this.color},0)`);
+    gradient.addColorStop(0, `rgba(${this.color}, 0.6)`);
+    gradient.addColorStop(0.9, `rgba(${this.color},0)`);
 
     ctx.fillStyle = gradient;
     ctx.beginPath();
