@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "arrow.css";
+@import "bg.css";
 
 *,
 *::before,
@@ -1927,6 +1928,9 @@ button {
   .card-img img {
     width: 240px;
     height: 240px;
+  }
+  .navbar a {
+    font-size: 1rem;
   }
 }
 

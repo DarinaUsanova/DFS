@@ -15,11 +15,9 @@ const bgObserver = new IntersectionObserver(
     const entry = entries[0];
     if (!entry.isIntersecting) {
       cnvs.style.opacity = 0;
-      gradientBg.style.display = "none";
     } else {
       runAnimation();
       cnvs.style.opacity = 1;
-      gradientBg.style.display = "block";
     }
   },
   { threshold: 0.0 }
