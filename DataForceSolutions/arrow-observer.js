@@ -4,8 +4,6 @@ const mainArrow = document.querySelector(".main-arrow");
 let path = mainArrow.querySelector("svg path");
 let length = path.getTotalLength();
 
-console.log(length);
-
 // path.style.strokeDashoffset = length;
 path.style.strokeDasharray = length;
 
