@@ -27,7 +27,7 @@
   font-size: 16px;
 
   --color-bg1: rgb(254, 255, 252);
-  --color-bg2: rgb(230, 238, 240);
+  --color-bg2: rgb(243, 247, 248);
   --color1: 223, 163, 240;
   --color2: 38, 223, 253;
   --color3: 240, 163, 219;
@@ -313,14 +313,14 @@ header {
 }
 
 .btn {
-  width: 220px;
+  width: 200px;
   height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 36px;
+  padding: 16px 24px;
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: var(--text-dark);
@@ -527,7 +527,7 @@ header {
 .member img {
   width: 300px;
   height: 285px;
-  border-radius: 40px;
+  border-radius: 32px;
   object-fit: cover;
 }
 
@@ -932,7 +932,7 @@ button {
   font-size: 1.25rem;
   line-height: 1.25rem;
   z-index: 2;
-  width: 220px;
+  width: 200px;
 }
 
 .form-info {
@@ -988,7 +988,7 @@ button {
   color: var(--main-blue);
   font-size: 1.25rem;
   line-height: 1.25rem;
-  width: 220px;
+  width: 200px;
 }
 
 .call-card-inner svg {
@@ -1513,6 +1513,7 @@ button {
     background: var(--white);
     padding: 36px;
     border-radius: 40px;
+    border: 1px solid #e8eff6;
   }
 }
 
@@ -1722,6 +1723,10 @@ button {
   }
   .contact-wrapper {
     padding: 200px 40px 102px;
+  }
+
+  .footer-info {
+    font-size: 1rem;
   }
 }
 
@@ -1985,6 +1990,7 @@ button {
     justify-content: center;
     padding: 24px 28px 38px 24px;
     gap: 20px;
+    border: none;
   }
   .card-img img {
     width: 275px;
@@ -2109,7 +2115,7 @@ button {
     width: auto;
   }
   .call-btn {
-    bottom: -115%;
+    bottom: -125%;
   }
   .email {
     font-size: 2.3rem;
