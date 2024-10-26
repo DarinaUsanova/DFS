@@ -214,14 +214,21 @@ header {
   padding: 36px 42px;
   list-style: none;
   opacity: 0;
+  visibility: hidden;
   transform: scale(0.5);
   transform-origin: top right;
   transition: 0.3s ease-out;
 }
 
+.hidden-on-load {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
 .menu-mobile.is-active {
   pointer-events: all;
   opacity: 1;
+  visibility: visible;
   transform: scale(1);
 }
 
@@ -740,6 +747,7 @@ header {
 .first-row {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 48px;
   padding: 40px 0 24px;
 }
@@ -747,6 +755,7 @@ header {
 .second-row {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 36px;
   padding: 24px;
 }
@@ -754,6 +763,7 @@ header {
 .third-row {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   padding: 24px;
 }
@@ -761,6 +771,7 @@ header {
 .fourth-row {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   padding: 24px 0 40px;
 }
@@ -774,13 +785,10 @@ header {
 }
 
 .clients-wrapper {
-  position: absolute;
-  z-index: 1;
-  bottom: -12%;
-  left: 8%;
+  margin-bottom: -200px;
   background-color: var(--white);
   color: var(--text-dark);
-  width: 1000px;
+  width: 100%;
   padding: 40px;
   border-radius: 40px;
   display: flex;
@@ -832,10 +840,15 @@ header {
 }
 
 .contact-wrapper {
-  padding: 292px 40px 226px;
+  padding: 0 40px 226px;
+  margin-top: 142px;
   display: flex;
   flex-direction: column;
   gap: 64px;
+}
+
+.contact-wrapper .section-header {
+  padding-top: 108px;
 }
 
 .contact-items {
@@ -1305,13 +1318,12 @@ button {
     padding: 96px 0 102px;
   }
   .contact-wrapper {
-    padding: 200px 40px 180px;
+    padding: 92px 40px 180px;
+    margin-top: 20px;
   }
   .clients-wrapper {
     padding: 36px;
     gap: 60px;
-    width: 800px;
-    left: 15%;
   }
   .members-img {
     justify-content: space-around;
@@ -1400,9 +1412,6 @@ button {
   .required {
     margin-right: 0;
   }
-  .clients-wrapper {
-    left: 10%;
-  }
   .technology-logos {
     margin: 48px 0;
     height: 503px;
@@ -1476,11 +1485,25 @@ button {
     padding: 76px 40px;
   }
   .contact-wrapper {
-    padding: 200px 40px 102px;
+    padding: 92px 40px 102px;
   }
 
   .footer-info {
     font-size: 1rem;
+  }
+  .clients-wrapper {
+    box-shadow: 29px 97px 28px 0px rgba(30, 45, 66, 0),
+      19px 62px 26px 0px rgba(30, 45, 66, 0),
+      11px 35px 22px 0px rgba(30, 45, 66, 0.02),
+      5px 16px 16px 0px rgba(30, 45, 66, 0.03),
+      1px 4px 9px 0px rgba(30, 45, 66, 0.03);
+  }
+  .call-card {
+    box-shadow: 12px 88px 25px 0px rgba(28, 43, 64, 0),
+      8px 56px 23px 0px rgba(28, 43, 64, 0.01),
+      4px 32px 19px 0px rgba(28, 43, 64, 0.03),
+      2px 14px 14px 0px rgba(28, 43, 64, 0.05),
+      0px 4px 8px 0px rgba(28, 43, 64, 0.06);
   }
 }
 
@@ -1548,11 +1571,6 @@ button {
     height: 100%;
     max-width: 100%;
     object-fit: contain;
-  }
-  .clients-wrapper {
-    bottom: -20%;
-    width: 600px;
-    left: 17%;
   }
   .main-arrow {
     display: none;
@@ -1626,7 +1644,7 @@ button {
     justify-content: center;
   }
   .email {
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 6rem;
   }
   .logo img {
@@ -1774,7 +1792,7 @@ button {
     padding: 48px 24px 127px;
   }
   .contact-wrapper {
-    padding: 120px 24px 68px;
+    padding: 12px 24px 68px;
   }
   .section-header {
     gap: 26px;
@@ -1800,11 +1818,8 @@ button {
     margin: 24px 0;
   }
   .clients-wrapper {
-    bottom: -12%;
-    width: 327px;
     padding: 32px 24px;
     gap: 32px;
-    left: 25%;
   }
   .contact-wrapper {
     gap: 24px;
@@ -1905,9 +1920,6 @@ button {
   .member:nth-child(3) {
     margin-top: 42px;
   }
-  .clients-wrapper {
-    left: 11%;
-  }
   .clients {
     gap: 24px;
   }
@@ -1942,10 +1954,7 @@ button {
   .about-content h3 {
     margin-bottom: 0;
   }
-}
-
-@media screen and (max-width: 400px) {
-  .clients-wrapper {
-    left: 7%;
+  .email {
+    font-size: 2rem;
   }
 }

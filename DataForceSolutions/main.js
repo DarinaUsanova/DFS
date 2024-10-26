@@ -33,6 +33,11 @@ const overlayer = document.querySelector("figure");
 
 //burger menu
 
+document.addEventListener("DOMContentLoaded", () => {
+  const menuMobile = document.querySelector(".menu-mobile");
+  menuMobile.classList.remove("hidden-on-load");
+});
+
 burger.addEventListener("click", () => {
   burger.classList.toggle("is-active");
   menuMobile.classList.toggle("is-active");
