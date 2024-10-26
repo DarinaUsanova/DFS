@@ -1,28 +1,47 @@
-const sidebar = document.querySelector(".sidebar");
 const burger = document.querySelector(".burger");
 const menuMobile = document.querySelector(".menu-mobile");
-const navLinks = document.querySelectorAll(".menu-mobile .is-active a");
 const overlayer = document.querySelector("figure");
-
-//burger menu
+const navLinks = document.querySelectorAll(".menu-mobile a");
 
 document.addEventListener("DOMContentLoaded", () => {
-  const menuMobile = document.querySelector(".menu-mobile");
   menuMobile.classList.remove("hidden-on-load");
 });
 
+// Обработчик клика для бургера
 burger.addEventListener("click", () => {
-  burger.classList.toggle("is-active");
-  menuMobile.classList.toggle("is-active");
-  overlayer.classList.toggle("visible");
+  if (!menuMobile.classList.contains("is-active")) {
+    // Показать меню и активировать бургер
+    menuMobile.style.display = "flex";
+    setTimeout(() => {
+      menuMobile.classList.add("is-active");
+      burger.classList.add("is-active");
+      overlayer.classList.add("visible");
+    }, 50);
+  } else {
+    // Скрыть меню
+    closeMenu();
+  }
 });
 
 function closeMenu() {
-  burger.classList.remove("is-active");
+  // Удалить класс is-active и скрыть overlayer
   menuMobile.classList.remove("is-active");
+  burger.classList.remove("is-active");
   overlayer.classList.remove("visible");
+
+  // Скрыть display после завершения анимации
+  menuMobile.addEventListener(
+    "transitionend",
+    () => {
+      if (!menuMobile.classList.contains("is-active")) {
+        menuMobile.style.display = "none";
+      }
+    },
+    { once: true }
+  );
 }
 
+// Дополнительные события для закрытия меню
 function setupCloseEvents() {
   window.addEventListener("resize", handleCloseOnResize);
   window.addEventListener("keydown", handleCloseOnEscape);
@@ -51,6 +70,7 @@ function handleCloseOnClickOutside(event) {
   }
 }
 
+// Вызов функции для установки событий закрытия
 setupCloseEvents();
 
 //cookies banner
