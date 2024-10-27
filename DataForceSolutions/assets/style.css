@@ -244,7 +244,6 @@ header {
   background: none;
   border-radius: 100px;
   border: 2px solid rgba(236, 233, 242, 0.3);
-  /* background: rgba(255, 255, 255, 0.13); */
   backdrop-filter: blur(10px);
   z-index: 10;
 }
@@ -858,7 +857,6 @@ header {
 
 .message-card form {
   position: relative;
-  /* margin-top: 76px; */
   padding: 32px;
   width: 760px;
   height: 400px;
