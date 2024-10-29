@@ -1965,4 +1965,7 @@ button {
   .email {
     font-size: 2rem;
   }
+  .hero-wrapper .btn {
+    outline: 4px solid rgba(0, 89, 255, 0.3);
+  }
 }
