@@ -18,7 +18,7 @@ const colors = [
 
 const breakpoints = [
   {
-    width: 430,
+    width: 450,
     sizes: [200, 150, 150, 100, 150, 100],
     speeds: [0.1, 0.1, 0.2, 0.2, 0.4, 0.3],
   },

@@ -730,7 +730,8 @@ header {
 }
 
 .technology-logos {
-  margin: 86px 0;
+  /* margin: 86px 0; */ /* change when clients added */
+  margin-top: 86px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -791,7 +792,8 @@ header {
   width: 100%;
   padding: 40px;
   border-radius: 40px;
-  display: flex;
+  /* display: flex; */ /* change when clients added */
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 86px;
@@ -840,16 +842,17 @@ header {
 }
 
 .contact-wrapper {
-  padding: 0 40px 226px;
-  margin-top: 142px;
+  /* padding: 0 40px 226px; */ /* change when clients added */
+  padding: 108px 40px 226px;
+  /* margin-top: 142px; */ /* change when clients added */
   display: flex;
   flex-direction: column;
   gap: 64px;
 }
 
-.contact-wrapper .section-header {
+/* .contact-wrapper .section-header { 
   padding-top: 108px;
-}
+} */ /* change when clients added */
 
 .contact-items {
   position: relative;
@@ -1318,7 +1321,7 @@ button {
   }
   .contact-wrapper {
     padding: 92px 40px 180px;
-    margin-top: 20px;
+    /* margin-top: 20px; */ /* change when clients added */
   }
   .clients-wrapper {
     padding: 36px;
@@ -1505,7 +1508,7 @@ button {
       0px 4px 8px 0px rgba(28, 43, 64, 0.06);
   }
   .contact-wrapper {
-    margin-top: 35px;
+    /* margin-top: 35px; */ /* change when clients added */
   }
 }
 
@@ -1791,10 +1794,12 @@ button {
     padding: 48px 24px;
   }
   .technology-wrapper {
-    padding: 48px 24px 127px;
+    /* padding: 48px 24px 127px; */ /* change when clients added */
+    padding: 48px 24px;
   }
   .contact-wrapper {
-    padding: 12px 24px 68px;
+    /* padding: 12px 24px 68px; */ /* change when clients added */
+    padding: 48px 24px 68px;
   }
   .section-header {
     gap: 26px;
@@ -1913,11 +1918,11 @@ button {
     font-size: 1rem;
     line-height: 1rem;
   }
-  .contact-wrapper .section-header {
+  /* .contact-wrapper .section-header {
     padding-top: 28px;
-  }
+  } */ /* change when clients added */
   .contact-wrapper {
-    margin-top: 100px;
+    /* margin-top: 100px; */ /* change when clients added */
   }
 }
 

@@ -7,7 +7,7 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
 
-  fetch("/http://161.35.29.72/contact", {
+  fetch("http://161.35.29.72/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
