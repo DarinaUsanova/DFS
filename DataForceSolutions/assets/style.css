@@ -44,8 +44,8 @@
 
   --width-mob: 100px;
   --height-mob: 45px;
-  --quantity-mob1: 11;
-  --quantity-mob2: 9;
+  --quantity-mob1: 8;
+  --quantity-mob2: 8;
 }
 
 html {
@@ -738,7 +738,7 @@ header {
   gap: 8px;
   border-top: 2px solid var(--white);
   border-bottom: 2px solid var(--white);
-  height: 575px;
+  height: 452px;
 }
 
 .mobile-logos {
@@ -766,20 +766,11 @@ header {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 24px;
-}
-
-.fourth-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
   padding: 24px 0 40px;
 }
 
 .client-item img,
 .first-row img,
-.fourth-row img,
 .second-row img,
 .third-row img {
   transform: scale(0.9);
@@ -1097,6 +1088,12 @@ button {
   gap: 36px;
 }
 
+.socials a {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .socials a,
 .legal a,
 .navbar li {
@@ -1273,8 +1270,7 @@ button {
   }
   .first-row,
   .second-row,
-  .third-row,
-  .fourth-row {
+  .third-row {
     gap: 30px;
   }
   .card {
@@ -1345,8 +1341,7 @@ button {
 
 @media screen and (max-width: 1130px) {
   .first-row,
-  .third-row,
-  .fourth-row {
+  .third-row {
     gap: 20px;
   }
   .second-row {
@@ -1354,8 +1349,7 @@ button {
   }
   .first-row img,
   .second-row img,
-  .third-row img,
-  .fourth-row img {
+  .third-row img {
     transform: scale(0.8);
   }
   .client-item img {
@@ -1416,7 +1410,7 @@ button {
   }
   .technology-logos {
     margin: 48px 0;
-    height: 503px;
+    height: 372px;
   }
   .workflow-box {
     margin-top: 36px;
@@ -1437,8 +1431,7 @@ button {
   }
   .first-row,
   .second-row,
-  .third-row,
-  .fourth-row {
+  .third-row {
     padding: 16px 0;
   }
   .card-img img {
@@ -1527,8 +1520,7 @@ button {
   }
   .first-row,
   .second-row,
-  .third-row,
-  .fourth-row {
+  .third-row {
     display: none;
   }
   .mobile-logos {
