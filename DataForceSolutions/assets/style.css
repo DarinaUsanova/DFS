@@ -189,6 +189,45 @@ header {
   height: 50px;
 }
 
+.temp-banner {
+  max-width: 990px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  margin: 0 auto;
+  gap: 8px;
+  border-radius: 32px;
+  outline: 4px solid rgba(232, 239, 246, 0.8);
+  background: rgba(0, 89, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.temp-banner span {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-light);
+}
+
+.temp-banner a {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-light);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transition-property: opacity;
+}
+
+.temp-banner a:hover {
+  opacity: 0.7;
+}
+
 .navbar {
   display: flex;
   padding: 16px 32px;
@@ -1503,6 +1542,13 @@ button {
   .contact-wrapper {
     /* margin-top: 35px; */ /* change when clients added */
   }
+  .temp-banner {
+    max-width: 760px;
+  }
+  .temp-banner span,
+  .temp-banner p {
+    line-height: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 970px) {
@@ -1704,6 +1750,9 @@ button {
   }
   .navbar a {
     font-size: 1rem;
+  }
+  .temp-banner {
+    margin-top: 28px;
   }
 }
 
@@ -1916,6 +1965,16 @@ button {
   .contact-wrapper {
     /* margin-top: 100px; */ /* change when clients added */
   }
+  .temp-banner {
+    max-width: 500px;
+    flex-direction: column;
+    padding: 8px 8px;
+  }
+  .temp-banner span,
+  .temp-banner a {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1964,5 +2023,11 @@ button {
   }
   .hero-wrapper .btn {
     outline: 4px solid rgba(0, 89, 255, 0.3);
+  }
+  .temp-banner {
+    max-width: 350px;
+    gap: 4px;
+    padding: 8px 22px;
+    align-items: start;
   }
 }
